@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    margin:0 5%;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+nav img{
+    float:right;
+}
+nav ul{
+    float:left;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.links{
+    margin: 0 10px;
+    height: 60px;
+    padding: 20px 0;
+}
+.links a{
+    text-decoration: none;
+    color: #000;
+    height: 60px;
+}
+.links ul{
+    position: absolute;
+    top: 63px;
+    display: none;
+    background-color: #00a1ff;
+    margin: 0;
+}
+/**Exibe submenu**/
+.links:hover ul{ 
+    display: block;
+}
+.links li{
+    padding: 10px 0;
+}
+.links ul li{
+    margin: 2px 0;
+    width: 155px;
+    display: block;
+    padding: 5px 0 5px 7px;
+    transition: 0.7s;
+    border-bottom: rgba(255, 255, 255, 0.45) solid 1px;
+}
+.links ul li:last-child{
+    border-bottom: none;
+}
+.links ul li a:hover{
+    padding-left: 7px;
+    transition: 0.7s;
+}
+.links ul li a{
+    color: #fff;
+    transition: 0.7s;
+}
+.botão a{
+    background-color: #00a1ff;
+    border: #00a1ff solid 1px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+.botão a:hover{
+    border: #00a1ff solid 1px;
+    color: #00a1ff;
+    background-color: #fff;
+    transition: 0.7s;
+}
+/*Banner*/
+.principal{
+    background-image: url(imgs/Rectangle\ 26.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+}
+.busca{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    padding-top:30px;
+    width: 70vw;
+    height: 200px;
+    left:15%;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+.buscador{
+    display:inline-flex;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.search{
+    background-color: #00a1ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.search img{
+    margin-left: 1px;
+    margin-top: 5px;
+    width: 27px;
+    height: 27px;
+}
+.buscador select{
+    background-color: #fff;
+    height: 40px;
+    width:250px;
+    padding-left: 5px;
+    color: rgb(46, 46, 46);
+    border: #000 solid 1px;
+    border-radius: 3px;
+    margin-right: 7px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+/*cards*/
+.row{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.row a{
+    text-decoration: none;
+}
+.card{
+    display: block;
+    margin:0 30px 30px 0;
+    width: 200px;
+    border-radius: 7px;
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.226);
+    transition: 0.7s;
+}
+a:hover .card{
+    box-shadow:0px 3px 15px rgba(0, 0, 0, 0.550);
+    transition: 0.7s;
+}
+.card h2{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-left: 7px;
+    font-size: 0.8rem;
+    color: #000;
+}
+.img{
+    border-radius: 7px 7px 0 0;
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+}
+.pa{
+    background-color: orangered;
+}
+.ma{
+    background-color: green;
+}
+.ci{
+    background-color: rgb(65, 1, 1);
+}
+.ed{
+    background-color: blue;
+}
+.sa{
+    background-color: red;
+}
+.img img{
+    margin: 0 auto;
+}
+.card button{
+    background-color: #fff;
+    font-size: 0.6rem;
+    border: rgb(86, 86, 86) 1px solid;
+    padding: 2px 6px;
+    border-radius: 2px;
+    color: rgb(86, 86, 86);
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+/*footer*/
+footer{
+    background-color: rgb(192, 192, 192);
+    color: rgb(84, 84, 84);
+    bottom:0;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 0.6rem;
+}
