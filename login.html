@@ -57,9 +57,9 @@
             <img src="/imgs/img_login.png" alt="">
         </section>
         <aside>
+            <form id="login" action="">
             <h2>Bem vindo!</h2>
             <p>Faça login na sua conta</p>
-            <form action="">
                 <label for="email">E-mail</label><br>
                 <input type="email" name="email" id="email"><br>
                 <label for="senha">Senha</label><br>
@@ -67,8 +67,9 @@
                 <input type="radio" name="lembrar" id="lembrar">
                 <label for="lembrar">Lembrar-me</label>
                 <a href="">Esqueceu a senha?</a><br>
-                <input type="button" value="Entrar"><br>
-                <input type="button" value="Faça login com o google">
+                <input type="button" value="Entrar" id="entrar"><br>
+                <button id="google"><img src="/imgs/google.png" alt=""> Entrar com o Google</button>
+                <p class="cadastro">Não tem conta? <a href="">Cadastre-se</a></p>
             </form>
         </aside>
     </main>

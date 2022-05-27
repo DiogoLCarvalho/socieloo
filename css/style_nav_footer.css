@@ -103,7 +103,7 @@ footer{
     font-size: 0.6rem;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:859px){
     /*tirar menu*/
     #menu{
         display: none;

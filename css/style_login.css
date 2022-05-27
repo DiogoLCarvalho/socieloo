@@ -1,3 +1,6 @@
+nav{
+    border-bottom:rgba(128, 128, 128, 0.407) 1px solid;
+}
 main{
     display: flex;
     flex-wrap: wrap;
@@ -10,15 +13,82 @@ section{
     float: left;
 }
 aside{
+    padding-top: 100px;
     float:right;
     border-left: #00a1ff 1px solid;
-    padding-left: 10vw;
+    padding-left: 19vw;
 }
-aside input{
+aside input:not(#lembrar){
     width: 250px;
     height: 30px;
     margin: 5px 0;
 }
 aside p{
     margin-bottom: 15px;
+}
+aside a{
+    font-size: small;
+    color:#00a1ff;
+    float:right;
+}
+aside label[for="lembrar"]{
+    font-size: small;
+    justify-content: baseline;
+}
+#entrar{
+    cursor: pointer;
+    background-color: #00a1ff;
+    color: #fff;
+    border: #00a1ff;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#entrar:hover{
+    border: #00a1ff solid 1px;
+    color: #00a1ff;
+    background-color: #fff;
+    transition: 0.5s;
+}
+#google{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #000;
+    border: solid 1px #000;
+    color: #fff;
+    padding: 2px 0;
+    width: 250px;
+    height: 30px;
+    margin: 5px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+#google:hover{
+    background-color: #fff;
+    border: solid 1px gray;
+    color: rgb(37, 37, 37);
+    transition: 0.5s;
+}
+#google img{
+    width: 20px;
+    padding-right: 5px;
+}
+.cadastro{
+    margin-left: 40px;
+    font-size: small;
+}
+.cadastro a{
+    float: none;
+}
+
+@media screen and (max-width:670px){
+    section{
+        display: none;
+    }
+    aside{
+        margin: 0 auto;
+        border: 0;
+        padding: 0;
+    }
 }
