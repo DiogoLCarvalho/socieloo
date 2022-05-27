@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 87vh;
+    justify-content:space-around;
+    align-content: center;
+    align-items: center;
+}
+section{
+    float: left;
+}
+aside{
+    float:right;
+    border-left: #00a1ff 1px solid;
+    padding-left: 10vw;
+}
+aside input{
+    width: 250px;
+    height: 30px;
+    margin: 5px 0;
+}
+aside p{
+    margin-bottom: 15px;
+}
