@@ -1,0 +1,200 @@
+/* Tag gerals */
+#cadastro {
+    width: 100%;
+    height: calc(100vh - 63px);
+    font-size: 16px;
+}
+
+#cadastro__section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+/* Formulario */
+.section__form {
+    width: 40%;
+    height: 50%;
+    border: 1px solid black;
+    box-shadow: 1px 2px 5px #00000070;
+    padding: 30px;
+}
+
+.section__title{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0px;
+}
+
+.form__group{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__group .group__text label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form__group .group__text label::before,.about__radios p::before{
+    content: "*";
+    color: #00a1ff;
+}
+
+.group__text{
+    width: 40%;
+}
+.group__about{
+    width: 40%;
+}
+
+.form__group .group__text label+input,.form__group .group__text #group__select>select{
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form__group .group__text #group__select>select{
+    -webkit-appearance:none;
+}
+
+#group__select{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#group__select:before{
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+    pointer-events: none;
+}
+
+.group__about{
+    display: flex;
+    flex-direction: column;
+}
+
+.about__radios{
+    width: 100%;
+    height: 230px;
+}
+
+.about__radios p{
+    font-weight: bold;
+}
+
+label[for="termos"]>a{
+    color: #00a1ff;
+}
+
+label[for="termos"],#termos{
+    font-size: .92em;
+    margin-bottom: 10px;
+}
+
+.options__submit{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #00a1ff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.options__submit:hover{
+    background: rgba(0, 162, 255, 0.856)
+}
+
+
+/* Três botões */
+.section__radio {
+    position: absolute;
+    top: 85%;
+}
+
+.radio__group {
+    list-style: none;
+}
+
+.radio__group li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.radio__input {
+    cursor: pointer;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #00a1ff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.radio__input:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #00a1ff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 600ms ease-in-out;
+    position: absolute;
+}
+
+.radio__input:checked:before {
+    opacity: 1;
+}
+
+.radio__input:focus {
+    box-shadow: 0 0 5px #00a1ff;
+}
+
+.radio__span-one:before,
+.radio__span-one:after {
+    content: ' ';
+    position: absolute;
+    left: 40px;
+    width: 14%;
+    border: 2px solid #00a1ff;
+    margin-top: -10.3%;
+}
+
+.radio__span-two:before,
+.radio__span-two:after {
+    content: ' ';
+    position: absolute;
+    left: 92px;
+    width: 16%;
+    border: 2px solid #00a1ff;
+    margin-top: -10.3%;
+}
+
+input[type="radio"],input[type="checkbox"]{
+    accent-color: #0080C9;
+}
