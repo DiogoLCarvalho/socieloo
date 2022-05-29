@@ -14,6 +14,10 @@
     position: relative;
 }
 
+#cadastro__section div img {
+    width: 400px;
+}
+
 /* Formulario */
 .section__form {
     width: 40%;
