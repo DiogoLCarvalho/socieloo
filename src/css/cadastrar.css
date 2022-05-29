@@ -23,14 +23,14 @@
     padding: 30px;
 }
 
-.section__title{
+.section__title {
     width: 100%;
     text-align: center;
     font-size: 2em;
     margin: 10px 0px;
 }
 
-.form__group{
+.form__group {
     width: 100%;
     height: 100%;
     display: flex;
@@ -38,25 +38,28 @@
     align-items: center;
 }
 
-.form__group .group__text label{
+.form__group .group__text label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.form__group .group__text label::before,.about__radios p::before{
+.form__group .group__text label::before,
+.about__radios p::before {
     content: "*";
     color: #00a1ff;
 }
 
-.group__text{
-    width: 40%;
-}
-.group__about{
+.group__text {
     width: 40%;
 }
 
-.form__group .group__text label+input,.form__group .group__text #group__select>select{
+.group__about {
+    width: 40%;
+}
+
+.form__group .group__text label+input,
+.form__group .group__text #group__select>select {
     width: 100%;
     outline: none;
     border: 1px solid black;
@@ -66,17 +69,17 @@
     margin-bottom: 10px;
 }
 
-.form__group .group__text #group__select>select{
-    -webkit-appearance:none;
+.form__group .group__text #group__select>select {
+    -webkit-appearance: none;
 }
 
-#group__select{
+#group__select {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-#group__select:before{
+#group__select:before {
     content: "";
     position: absolute;
     top: 16px;
@@ -86,30 +89,31 @@
     pointer-events: none;
 }
 
-.group__about{
+.group__about {
     display: flex;
     flex-direction: column;
 }
 
-.about__radios{
+.about__radios {
     width: 100%;
     height: 230px;
 }
 
-.about__radios p{
+.about__radios p {
     font-weight: bold;
 }
 
-label[for="termos"]>a{
+label[for="termos"]>a {
     color: #00a1ff;
 }
 
-label[for="termos"],#termos{
+label[for="termos"],
+#termos {
     font-size: .92em;
     margin-bottom: 10px;
 }
 
-.options__submit{
+.options__submit {
     width: 100%;
     padding: 8px 10px;
     font-size: 15px;
@@ -121,7 +125,7 @@ label[for="termos"],#termos{
     outline: none;
 }
 
-.options__submit:hover{
+.options__submit:hover {
     background: rgba(0, 162, 255, 0.856)
 }
 
@@ -195,6 +199,121 @@ label[for="termos"],#termos{
     margin-top: -10.3%;
 }
 
-input[type="radio"],input[type="checkbox"]{
+input[type="radio"],
+input[type="checkbox"] {
     accent-color: #0080C9;
+}
+
+/* Responvidade */
+@media only screen and (max-width: 1700px) {
+    .section__form {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1530px) {
+    label[for="termos"] {
+        font-size: .86em;
+        vertical-align: 1px
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .section__form {
+        width: 65%;
+    }
+
+    #cadastro__section div img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .form__group {
+        justify-content: space-evenly;
+    }
+
+    label[for="termos"] {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .section__form {
+        width: 80%;
+    }
+
+    #cadastro__section {
+        flex-direction: column-reverse;
+    }
+
+    .section__radio {
+        top: 94.5%;
+    }
+
+    label[for="termos"] {
+        font-size: .85em;
+    }
+
+    #cadastro {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .section__form {
+        width: 95%;
+    }
+
+    .form__group {
+        justify-content: center;
+    }
+
+    .group__text {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:670px){
+    .form__group {
+        flex-direction: column;
+    }
+    #cadastro__section div img {
+        display: none;
+    }
+    .section__form {
+        height: 100%;
+    }
+    .group__text,.group__about  {
+        width: 90%;
+    }
+    .radio__span-two:before, .radio__span-two:after{
+        width: 15%;
+    }
+
+}
+@media screen and (max-width:400px){
+    #cadastro {
+        font-size: 12px;
+    }
+    .radio__span-two:before, .radio__span-two:after{
+        width: 13%;
+    }
+    .about__radios {
+        height: 155px;
+    }
+    .radio__input {
+        width: 20px;
+        height: 20px;
+    }
+    .radio__span-two:before, .radio__span-two:after,.radio__span-one:before, .radio__span-one:after{
+        content: ' ';
+        left: 30px;
+        width: 17%;
+        border: 1px solid #00a1ff;
+        margin-top: -8.3%;
+    }
+    .radio__span-one:before, .radio__span-one:after{
+        left: 73px;
+    }
+
 }
