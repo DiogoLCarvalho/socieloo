@@ -321,7 +321,7 @@ input[type="checkbox"] {
     }
 
 }
-@media screen and (max-height:900px) {
+@media screen and (max-height:700px) {
     #cadastro__section{
         height: 120vh;
     }
