@@ -1,0 +1,131 @@
+.section__ong {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.ong__imagens {
+    width: 30%;
+}
+
+.ong__informations {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.ong__imagens #imagens__container .container__item img {
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.ong__imagens #imagens__container .container__item+.container__item {
+    margin-top: 30px;
+}
+
+.informations__description {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#description__container{
+    width: 100%;
+    height:  100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.informations__description h1{
+    font-size: 1.5em;
+}
+
+.informations__description span {
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.informations__description p {
+    font-weight: 500;
+    text-align: justify;
+    font-size: 1.15em;
+}
+
+#description__social {
+    display: block;
+    width: 100%;
+}
+
+#description__social .social__item {
+    display: inline;
+}
+
+#description__social .social__item a img {
+    width: 35px;
+}
+
+.informations__botons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#comments {
+    width: 80%;
+    resize: none;
+    border: 1px solid black;
+}
+
+input[type='button'],
+button {
+    background-color: #00a1ff;
+    border: #00a1ff solid 1px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type='button'] {
+    width: 200px;
+    padding: 10px;
+}
+
+.informations__comments{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons__container{
+    width: 20%;
+}
+
+button {
+    width: 122px;
+    display: inline-block;
+}
+
+button img {
+    width: 15px;
+}
+
+button p {
+    display: inline;
+    vertical-align: 5px;
+}
