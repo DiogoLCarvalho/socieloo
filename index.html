@@ -1,146 +1,216 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style_home.css">
-    <link rel="stylesheet" href="/css/style_nav_footer.css">
-    <title>Inicio - Socieloo</title>
+    <link rel="stylesheet" href="src/css/style_header.css">
+    <title>ONG - Socieloo</title>
 </head>
+
 <body>
-    <nav>
-        <a href="#">
-            <img src="imgs/Socieloo 1.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
-        </a>
-        <label for="bt_menu"><img src="imgs/menu.png" alt="menu"></label>
-         <input type="checkbox" id="bt_menu"><!--menu responsivo-->  
-        <ul id="menu">
-            <li class="links">
-                <a href="">Segmentos▾</a>
-                <ul>
-                    <li class="sublink"><a href="">Cidadania</a></li>
-                    <li class="sublink"><a href="">Cultura e Esportes</a></li>
-                    <li class="sublink"><a href="">Educação</a></li>
-                    <li class="sublink"><a href="">Gênero e Diversidade</a></li>
-                    <li class="sublink"><a href="">Meio Ambiente</a></li>
-                    <li class="sublink"><a href="">Proteção Animal</a></li>
-                    <li class="sublink"><a href="">Saúde</a></li>
-                </ul>
-            </li>
-            <li class="links">
-                <a href="">Região▾</a>
-                <ul>
-                    <li class="sublink"><a href="">Zona Leste</a></li>
-                    <li class="sublink"><a href="">Zona Norte</a></li>
-                    <li class="sublink"><a href="">Centro</a></li>
-                    <li class="sublink"><a href="">Zona Oeste</a></li>
-                    <li class="sublink"><a href="">Zona Sul</a></li>
-                </ul>
-            </li>
-            <li class="links">
-                <a href="">Acessibilidade▾</a>
-                <ul>
-                    <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
-                    <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
-                    <li class="sublink"><a href="" title="Aumentar fonte">Aumentar fonte +</a></li>
-                    <li class="sublink"><a href="" title="Diminuir fonte">Diminuir fonte -</a></li>
-                    <li class="sublink"><a href="" title="Manual de acessibilidade">Acessibilidade</a></li>
-                </ul>
-            </li>
-            <li class="links login"><a href="login.html">Fazer login</a></li>
-            <li class="links botão"><a href="">Cadastre sua Ong</a></li>
-        </ul>
-    </nav>
-    <section class="principal">
-        <div class="busca">
-                <h1>Um ato de bondade pode ajudar muita gente!</h1>
-                <br>
-            <div class="buscador">
-                <select name="Segmentos" id="segmentos">
-                    <option value="Cidadania">Cidadania</option>
-                    <option value="Cultura e Esportes">Cultura e Esportes</option>
-                    <option value="Educação">Educação</option>
-                    <option value="Gênero e Diversidade">Gênero e Diversidade</option>
-                    <option value="Meio Ambiente">Meio Ambiente</option>
-                    <option value="Proteção Animal">Proteção Animal</option>
-                    <option value="Saúde">Saúde</option>
-                    <option value="Segmentos" selected disabled>Segmentos</option>
-                </select>
-                <select name="Região" id="Região">
-                    <option value="Zona Leste">Zona Leste</option>
-                    <option value="Zona Norte">Zona Norte</option>
-                    <option value="Centro">Centro</option>
-                    <option value="Zona Oeste">Zona Oeste</option>
-                    <option value="Zona Sul">Zona Sul</option>
-                    <option value="Região" selected disabled>Região</option>
-                </select>
-                <div class="search">
-                    <a href="">
-                        <img src="imgs/Vector.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
     <main>
-        <a href="">
-            <div class="card">
-                <div class="img pa">
-                    <img src="imgs/cil_animal.png" alt="">
+        <nav>
+            <a href="#">
+                <img src="src/imgs/Socieloo-logo.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
+            </a>
+            <label for="bt_menu"><img src="src/imgs/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
+            <!--menu responsivo-->
+            <ul id="menu">
+                <li class="links">
+                    <a href="">Segmentos▾</a>
+                    <ul>
+                        <li class="sublink"><a href="">Cidadania</a></li>
+                        <li class="sublink"><a href="">Cultura e Esportes</a></li>
+                        <li class="sublink"><a href="">Educação</a></li>
+                        <li class="sublink"><a href="">Gênero e Diversidade</a></li>
+                        <li class="sublink"><a href="">Meio Ambiente</a></li>
+                        <li class="sublink"><a href="">Proteção Animal</a></li>
+                        <li class="sublink"><a href="">Saúde</a></li>
+                    </ul>
+                </li>
+                <li class="links">
+                    <a href="">Região▾</a>
+                    <ul>
+                        <li class="sublink"><a href="">Zona Leste</a></li>
+                        <li class="sublink"><a href="">Zona Norte</a></li>
+                        <li class="sublink"><a href="">Centro</a></li>
+                        <li class="sublink"><a href="">Zona Oeste</a></li>
+                        <li class="sublink"><a href="">Zona Sul</a></li>
+                    </ul>
+                </li>
+                <li class="links">
+                    <a href="">Acessibilidade▾</a>
+                    <ul>
+                        <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
+                        <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
+                        <li class="sublink"><a href="" title="Aumentar fonte">Aumentar fonte +</a></li>
+                        <li class="sublink"><a href="" title="Diminuir fonte">Diminuir fonte -</a></li>
+                        <li class="sublink"><a href="" title="Manual de acessibilidade">Acessibilidade</a></li>
+                    </ul>
+                </li>
+                <li class="links botão"><a href="">Fazer login</a></li>
+            </ul>
+        </nav>
+
+        <section class="section__ong">
+            <section class="ong__imagens">
+
+                <ul id="imagens__container">
+                    <li class="container__item">
+                        <img src="src/imgs/fotosOng/fotos01.jpg" alt="Imagem da ong mostrando os integrantes">
+                    </li>
+
+                    <li class="container__item">
+                        <img src="src/imgs/fotosOng/fotos02.jpg" alt="Imagem de um cachorro muito engraçado">
+                    </li>
+
+                    <li class="container__item">
+                        <img src="src/imgs/fotosOng/fotos03.jpg" alt="Localização da Ong no Google Maps">
+                    </li>
+                </ul>
+
+                <div id="dvSlider">
+                    <button class="btSlider"> &#10094; </button>
+                    <button class="btSlider">&#10095;</button>
                 </div>
-                <h2>Adote Sempre Cabe mais Um</h2>
-                <a href="" class="button">Proteção Animal</a><a href="" class="button">Zona Leste</a>
-            </div>
-        </a>
-        <a href="">
-            <div class="card">
-                <div class="img ma">
-                    <img src="imgs/icon-park-outline_tree.png" alt="">
+
+            </section>
+
+            <section class="ong__informations">
+                <div class="informations__description">
+                    <h1>Adote Sempre Cabe Mais Um - Zona Leste</h1>
+
+                    <div id="description__container">
+
+                        <div class="description__about">
+                            <span>Descrição:</span>
+                            <p>Animais de rua são vistos cada vez com mais frequência por moradores da Zona Leste,
+                                pensando
+                                nisso, Abghail Deaij Carluci, protetora de animais há 18 anos, fundadora e presidente da
+                                ONG
+                                “Adote sempre cabe mais um”, em que 70% dos animais resgatados são da região leste. Os
+                                animais
+                                são doados já castrados, vacinados, vermifugados e entregues na residência do adotante.
+                            </p>
+                            <br>
+                            <p>Atualmente a fundadora Abghail alocou um espaço para poder cuidar dos animais abandonados
+                                e
+                                proporcionar maior conforto a eles. Porém, a verba das doações ainda é baixa em
+                                compensação ao
+                                número de animais abrigados. Para completar a renda, Abigail oferece projetos vinculados
+                                com seu
+                                projeto com da ONG, como hospedagem para cães e gatos, táxi dog e decoração para festas.
+                            </p>
+                        </div>
+
+                        <div class="description__contact">
+                            <span>Contato:</span>
+                            <ul id="description__social">
+                                <li class="social__item">
+                                    <a href="#" target="_blank"><img src="src/assets/facebook.svg"
+                                            alt="facebook icon"></a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" target="_blank">
+                                        <img src="src/assets/instagram.svg" alt="instagram icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
-                <h2>Pimp My Carroça</h2>
-                <a href="" class="button">Meio Ambiente</a><a href="" class="button">Zona Oeste</a>
-            </div>
-        </a>
-        <a href="">
-            <div class="card">
-                <div class="img ci">
-                    <img src="imgs/fluent_city-24-regular.png" alt="">
+
+
+                <div class="informations__botons">
+                    <div class="informations__donation">
+                        <input type="button" value="DOE PARA ESSA ONG">
+                    </div>
+
+                    <div class="informations__comments">
+                        <textarea name="comments" id="comments" cols="100" rows="6"
+                            placeholder="Comente o que achou..."></textarea>
+
+                        <div class="buttons__container">
+                            <button>
+                                <p>Enviar</p>
+                            </button>
+                            <button>
+                                <p>Compartilhar</p> <img src="src/assets/share.svg" alt="instagram icon">
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <h2>Instituto Resgatando Vidas</h2>
-                <a href="" class="button">Cidadania</a><a href="" class="button">Zona Norte</a>
-            </div>
-        </a>
-        <a href="">
-            <div class="card">
-                <div class="img ed">
-                    <img src="imgs/bi_book.png" alt="">
+            </section>
+        </section>
+
+        <section class="container__subtle">
+            <h2 id="subTitle">Sugestões</h2>
+        </section>
+
+        <section class="section__cards">
+
+            <a href="">
+                <div class="card">
+                    <div class="img pa">
+                        <img src="src/imgs/cil_animal.png" alt="">
+                    </div>
+                    <h2>Adote Sempre Cabe mais Um</h2>
+                    <a href="" class="button">Proteção Animal</a><a href="" class="button">Zona Leste</a>
                 </div>
-                <h2>Calhau Social</h2>
-                <a href="" class="button">Educação</a><a href="" class="button">Zona Leste</a>
-            </div>
-        </a>
-        <a href="">
-            <div class="card">
-                <div class="img pa">
-                    <img src="imgs/cil_animal.png" alt="">
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="img ma">
+                        <img src="src/imgs/icon-park-outline_tree.png" alt="">
+                    </div>
+                    <h2>Pimp My Carroça</h2>
+                    <a href="" class="button">Meio Ambiente</a><a href="" class="button">Zona Oeste</a>
                 </div>
-                <h2>Abrigo CoraCão</h2>
-                <a href="" class="button">Proteção Animal</a><a href="" class="button">Zona Sul</a>
-            </div>
-        </a>
-        <a href="">
-            <div class="card">
-                <div class="img sa">
-                    <img src="imgs/akar-icons_health.png" alt="">
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="img ci">
+                        <img src="src/imgs/fluent_city-24-regular.png" alt="">
+                    </div>
+                    <h2>Instituto Resgatando Vidas</h2>
+                    <a href="" class="button">Cidadania</a><a href="" class="button">Zona Norte</a>
                 </div>
-                <h2>Associação Popular Saúde</h2>
-                <a href="" class="button">Saúde</a><a href="" class="button">Zona Leste</a>
-            </div>
-        </a>
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="img ed">
+                        <img src="src/imgs/bi_book.png" alt="">
+                    </div>
+                    <h2>Calhau Social</h2>
+                    <a href="" class="button">Educação</a><a href="" class="button">Zona Leste</a>
+                </div>
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="img pa">
+                        <img src="src/imgs/cil_animal.png" alt="">
+                    </div>
+                    <h2>Abrigo CoraCão</h2>
+                    <a href="" class="button">Proteção Animal</a><a href="" class="button">Zona Sul</a>
+                </div>
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="img sa">
+                        <img src="src/imgs/akar-icons_health.png" alt="">
+                    </div>
+                    <h2>Associação Popular Saúde</h2>
+                    <a href="" class="button">Saúde</a><a href="" class="button">Zona Leste</a>
+                </div>
+            </a>
+        </section>
     </main>
-    <footer>
-        <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p> 
-    </footer>
+    <script src="src/js/carrossel.js"></script>
 </body>
+
 </html>
