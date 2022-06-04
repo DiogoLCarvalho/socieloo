@@ -1,5 +1,3 @@
-@import url(style_card.css);
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -37,6 +35,9 @@ nav ul{
     display: none;
     background-color: #00a1ff;
     margin: 0;
+}
+.login a:hover{
+    text-decoration: underline #000 1px;
 }
 /**Exibe submenu**/
 .links:hover ul{ 
@@ -91,9 +92,18 @@ label[for="bt_menu"]{
     display: none;
 }
 
+/*footer*/
+footer{
+    background-color: rgb(192, 192, 192);
+    color: rgb(84, 84, 84);
+    bottom:0;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 0.6rem;
+}
 
-/***********************************/
-@media screen and (max-width:800px){
+@media screen and (max-width:859px){
     /*tirar menu*/
     #menu{
         display: none;
@@ -110,7 +120,6 @@ label[for="bt_menu"]{
         top:63px;
         padding-bottom: 10px;
         height: 270px;
-        z-index: 99;
     }
     .botão a{
         background-color: none;
@@ -141,22 +150,5 @@ label[for="bt_menu"]{
         display: block;
         border: 0;
         
-    }
-    /**********************/
-    .principal{
-        height: 500px;
-    }
-    h1{
-        font-size: 1.2rem;
-    }
-}
-@media screen and (max-width:750px){
-    .principal{
-        height: 500px;
-    }
-}
-@media screen and (max-width:530px){
-    h1{
-        font-size: 1rem;
     }
 }
