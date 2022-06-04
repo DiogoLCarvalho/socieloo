@@ -1,11 +1,24 @@
+#subTitle {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    max-height: max-content;
+}
+
 .section__ong {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
     font-size: 16px;
+}
+
+#dvSlider {
+    display: none;
 }
 
 ul {
@@ -28,11 +41,11 @@ ul {
 .ong__imagens #imagens__container .container__item img {
     width: 350px;
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .ong__imagens #imagens__container .container__item+.container__item {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .informations__description {
@@ -43,15 +56,15 @@ ul {
     justify-content: space-between;
 }
 
-#description__container{
+#description__container {
     width: 100%;
-    height:  100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.informations__description h1{
+.informations__description h1 {
     font-size: 1.5em;
 }
 
@@ -79,17 +92,14 @@ ul {
     width: 35px;
 }
 
-.informations__botons{
+.informations__botons {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-#comments {
-    width: 80%;
-    resize: none;
-    border: 1px solid black;
-}
+
 
 input[type='button'],
 button {
@@ -106,19 +116,36 @@ input[type='button'] {
     padding: 10px;
 }
 
-.informations__comments{
+.informations__donation {
+    margin-bottom: 20px;
+}
+
+.informations__comments {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
-.buttons__container{
-    width: 20%;
+#comments {
+    width: 82%;
+    resize: none;
+    border: 1px solid black;
+}
+
+.buttons__container {
+    width: 13%;
+    margin-left: 50px;
 }
 
 button {
     width: 122px;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
+}
+
+.buttons__container button+button {
+    margin-top: 20px;
 }
 
 button img {
@@ -128,4 +155,229 @@ button img {
 button p {
     display: inline;
     vertical-align: 5px;
+}
+
+/* Responsividade */
+@media screen and (max-width:1700px) {
+    .buttons__container {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #comments {
+        width: 80%;
+    }
+
+    .buttons__container {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .section__ong {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .section__ong {
+        flex-direction: column;
+        margin-top: 70px;
+        height: 100vh;
+    }
+
+    .ong__imagens {
+        width: 100%;
+    }
+
+    .ong__imagens #imagens__container .container__item+.container__item {
+        margin: 0;
+        margin-left: 30px;
+    }
+
+    .ong__imagens #imagens__container .container__item img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .ong__informations {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .informations__comments {
+        justify-content: space-around;
+    }
+
+    .container__subtle {
+        margin: 50px 0px;
+    }
+
+    .container__subtle+.section__cards {
+        margin: 20px auto;
+    }
+
+    /* Criar carrossel */
+    #dvSlider {
+        display: block;
+    }
+
+    #dvSlider {
+        width: 90vw;
+        height: 450px;
+        border: 1px solid black;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        transition: .5s background ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url('../imgs/fotosOng/fotos01.jpg');
+    }
+
+    .btSlider {
+        background-color: #00a1ff;
+        width: 50px;
+        height: 70px;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        margin: 10px;
+        border: none;
+    }
+
+
+    #imagens__container {
+        display: flex;
+        padding: 20px;
+        display: none;
+
+        /*         
+ */
+    }
+}
+
+@media screen and (max-width:800px) {
+    .section__ong {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .section__ong {
+        height: 115vh;
+        font-size: 13px;
+        margin-top: 50px;
+    }
+
+    #dvSlider {
+        display: none;
+    }
+
+    .informations__botons {
+        align-items: center;
+    }
+
+    #imagens__container {
+        display: flex;
+        padding: 20px;
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .informations__comments {
+        flex-direction: column;
+    }
+
+    #comments,
+    .buttons__container {
+        width: 100%;
+    }
+
+    .buttons__container {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .buttons__container button {
+        width: 150px;
+        padding: 13px;
+        font-size: 1.05em;
+    }
+
+    input[type='button'] {
+        padding: 13px;
+        font-size: 1.05em;
+    }
+
+    .informations__description h1 {
+        margin-bottom: 10px;
+    }
+
+    .informations__description span {
+        display: block;
+        margin: 10px 0px;
+    }
+
+    .section__cards .card {
+        margin: 0 5px 30px 0;
+    }
+
+    .container__subtle {
+        margin: 13% 0px 10%;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .ong__imagens #imagens__container .container__item img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .ong__informations {
+        padding: 50px 15px;
+    }
+
+    .section__ong {
+        margin-top: 10%;
+    }
+
+    .informations__description h1 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .section__ong {
+        margin-top: 30%;
+    }
+
+    .ong__informations {
+        margin: 5%;
+    }
+
+    .informations__description {
+        height: 100%;
+    }
+
+    .container__subtle {
+        margin: 50% 0px 10%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .section__ong {
+        margin-top: 40%;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1025px) and (max-height:850px) {
+    .section__ong {
+        height: 120vh;
+    }
 }
