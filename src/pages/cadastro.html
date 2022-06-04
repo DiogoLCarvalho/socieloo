@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style__cadastrar.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <title>Cadastro - Socieloo</title>
+</head>
+<body>
+
+
+    <main id="cadastro">
+        <nav>
+            <a href="#">
+                <img src="../imgs/Socieloo-logo.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
+            </a>
+            <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
+             <input type="checkbox" id="bt_menu"><!--menu responsivo-->  
+            <ul id="menu">
+                <li class="links">
+                    <a href="">Segmentos▾</a>
+                    <ul>
+                        <li class="sublink"><a href="">Cidadania</a></li>
+                        <li class="sublink"><a href="">Cultura e Esportes</a></li>
+                        <li class="sublink"><a href="">Educação</a></li>
+                        <li class="sublink"><a href="">Gênero e Diversidade</a></li>
+                        <li class="sublink"><a href="">Meio Ambiente</a></li>
+                        <li class="sublink"><a href="">Proteção Animal</a></li>
+                        <li class="sublink"><a href="">Saúde</a></li>
+                    </ul>
+                </li>
+                <li class="links">
+                    <a href="">Região▾</a>
+                    <ul>
+                        <li class="sublink"><a href="">Zona Leste</a></li>
+                        <li class="sublink"><a href="">Zona Norte</a></li>
+                        <li class="sublink"><a href="">Centro</a></li>
+                        <li class="sublink"><a href="">Zona Oeste</a></li>
+                        <li class="sublink"><a href="">Zona Sul</a></li>
+                    </ul>
+                </li>
+                <li class="links">
+                    <a href="">Acessibilidade▾</a>
+                    <ul>
+                        <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
+                        <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
+                        <li class="sublink"><a href="" title="Aumentar fonte">Aumentar fonte +</a></li>
+                        <li class="sublink"><a href="" title="Diminuir fonte">Diminuir fonte -</a></li>
+                        <li class="sublink"><a href="" title="Manual de acessibilidade">Acessibilidade</a></li>
+                    </ul>
+                </li>
+                <li class="links botão"><a href="">Fazer login</a></li>
+            </ul>
+        </nav>
+        
+        <section id="cadastro__section">
+            <div>
+                <img src="../imgs/recy.png" alt="imagem ilustrativa">
+            </div>
+            <div class="section__form">
+                <form>
+                    <h1 class="section__title">Cadastre sua ONG</h1>
+
+                    <section  class="form__group">
+                        <div class="group__text">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Socieloo">
+
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" required placeholder="noobmaster69@hotmail.com">
+
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" name="telefone" required placeholder="+55 (11) 98765-4321">
+
+                            <label for="regiao">Região</label>
+
+                            <div id="group__select">
+                                <select name="regiao" id="regiao" required>
+                                    <option value="#" selected disabled>Selecione uma opção</option>
+                                    <option value="norte">Zona Norte</option>
+                                    <option value="sul">Zona Sul</option>
+                                    <option value="centro">Centro</option>
+                                    <option value="leste">Zona Leste</option>
+                                    <option value="oeste">Zona Oeste</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="group__about">
+                            <div class="about__radios">
+
+                                <p>Qual a causa da sua ONG?</p>
+
+                                <div class="radio__options">
+                                    <input type="radio" id="saude" name="causa">
+                                    <label for="saude">Saúde</label>
+                                </div>
+
+                                <div class="radio__options">
+                                    <input type="radio" id="educacao" name="causa">
+                                    <label for="educacao">Educação</label>
+                                </div>
+
+                                <div class="radio__options">
+                                    <input type="radio" id="cidadania" name="causa">
+                                    <label for="cidadania">Cidadania</label>
+                                </div>
+
+                                <div class="radio__options">
+                                    <input type="radio" id="culturaOuEsporte" name="causa">
+                                    <label for="culturaOuEsporte">Cultura ou esporte</label>
+                                </div>
+
+                                <div class="radio__options">
+                                    <input type="radio" id="generoOudiversidade" name="causa">
+                                    <label for="generoOudiversidade">Gênero e diversidade</label>
+                                </div>
+
+                                <div class="radio__options">
+                                    <input type="radio" id="meioAmbiente" name="causa">
+                                    <label for="meioAmbiente">Meio ambiente</label>
+                                </div>
+                                
+                                <div class="radio__options">
+                                    <input type="radio" id="protecaoAmbiental" name="causa">
+                                    <label for="protecaoAmbiental">Proteção Ambiental</label>
+                                </div>
+                            </div>
+
+                            <div class="options__checkbox">
+                                <input type="checkbox" name="termos" id="termos">
+                                <label for="termos">Eu concordo com os <a href="#">termos e condições</a></label>
+                            </div>
+                            
+                            <button class="options__submit">Avançar</button>
+                        </div>
+                    </section>
+                </form>
+
+            </div>
+
+            <section class="section__radio">
+                <ul class="radio__group">
+                    <li><input class="radio__input" name="process" id="radio-one" type='radio' checked><span class="radio__span-one"></span></li>
+                    <li><input class="radio__input" name="process" id="radio-two" type='radio'><span class="radio__span-two"></span></li>
+                    <li><input class="radio__input" name="process" id="radio-three" type='radio'></li>
+                </ul>
+            </section>
+        </section>
+
+    </main>
+</body>
+</html>

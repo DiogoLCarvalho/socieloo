@@ -1,0 +1,162 @@
+@import url(style_card.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    margin:0 5%;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+nav img{
+    float:right;
+}
+nav ul{
+    float:left;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.links{
+    margin: 0 10px;
+    height: 60px;
+    padding: 20px 0;
+}
+.links a{
+    text-decoration: none;
+    color: #000;
+    height: 60px;
+}
+.links ul{
+    position: absolute;
+    top: 63px;
+    display: none;
+    background-color: #00a1ff;
+    margin: 0;
+}
+/**Exibe submenu**/
+.links:hover ul{ 
+    display: block;
+}
+.links li{
+    padding: 10px 0;
+}
+.links ul li{
+    margin: 2px 0;
+    width: 155px;
+    display: block;
+    padding: 5px 0 5px 7px;
+    transition: 0.7s;
+    border-bottom: rgba(255, 255, 255, 0.45) solid 1px;
+}
+.links ul li:last-child{
+    border-bottom: none;
+}
+.links ul li a:hover{
+    padding-left: 7px;
+    transition: 0.7s;
+}
+.links ul li a{
+    color: #fff;
+    transition: 0.7s;
+}
+.botão a{
+    background-color: #00a1ff;
+    border: #00a1ff solid 1px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+.botão a:hover{
+    border: #00a1ff solid 1px;
+    color: #00a1ff;
+    background-color: #fff;
+    transition: 0.7s;
+}
+label img{
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: #00a1ff;
+    padding: 5px;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+#bt_menu{
+    display: none;
+}
+
+
+/***********************************/
+@media screen and (max-width:800px){
+    /*tirar menu*/
+    #menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+        display: block;
+        float: right;
+    }
+    #bt_menu:checked ~ #menu{
+        display: block;
+        background-color: #00a1ff;
+        position: absolute;
+        right: 35px;
+        top:63px;
+        padding-bottom: 10px;
+        height: 270px;
+        z-index: 99;
+    }
+    .botão a{
+        background-color: none;
+        border: none;
+        color: #fff;
+        border-radius: none;
+        height: 60px;
+        padding: 20px 0;
+        text-align: left;
+    }
+    .botão{
+        height: 30px;
+        margin-top: 20px;
+    }
+    #menu li{
+        position: relative;
+        float: center;
+    }
+    .links a{
+        color: #fff;
+    }
+    #menu li ul{
+        position: static;
+    }
+    #menu li ul li{
+        position: relative;
+        float: left;
+        display: block;
+        border: 0;
+        
+    }
+    /**********************/
+    .principal{
+        height: 500px;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:750px){
+    .principal{
+        height: 500px;
+    }
+}
+@media screen and (max-width:530px){
+    h1{
+        font-size: 1rem;
+    }
+}
