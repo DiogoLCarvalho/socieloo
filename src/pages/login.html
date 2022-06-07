@@ -10,14 +10,14 @@
 </head>
 <body>
     <nav>
-        <a href="../../index.html">
+        <a href="../../index.html" accesskey="1">
             <img src="../imgs/Socieloo 1.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
         </a>
         <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
          <input type="checkbox" id="bt_menu"><!--menu responsivo-->  
         <ul id="menu">
             <li class="links">
-                <a href="">Segmentos▾</a>
+                <a href="#" accesskey="2">Segmentos▾</a>
                 <ul>
                     <li class="sublink"><a href="">Cidadania</a></li>
                     <li class="sublink"><a href="">Cultura e Esportes</a></li>
@@ -29,7 +29,7 @@
                 </ul>
             </li>
             <li class="links">
-                <a href="">Região▾</a>
+                <a href="#"  accesskey="3">Região▾</a>
                 <ul>
                     <li class="sublink"><a href="">Zona Leste</a></li>
                     <li class="sublink"><a href="">Zona Norte</a></li>
@@ -39,7 +39,7 @@
                 </ul>
             </li>
             <li class="links">
-                <a href="">Acessibilidade▾</a>
+                <a href="#"  accesskey="4">Acessibilidade▾</a>
                 <ul>
                     <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
                     <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
@@ -48,7 +48,7 @@
                     <li class="sublink"><a href="" title="Manual de acessibilidade">Acessibilidade</a></li>
                 </ul>
             </li>
-            <li class="links botão"><a href="cadastro.html">Cadastre sua Ong</a></li>
+            <li class="links botão"><a href="cadastro.html" accesskey="5">Cadastre sua Ong</a></li>
         </ul>
     </nav>
 
@@ -74,6 +74,17 @@
                 <p class="cadastro">Não tem conta? <a href="">Cadastre-se</a></p>
             </form>
         </aside>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </main>
     <footer>
         <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p> 
