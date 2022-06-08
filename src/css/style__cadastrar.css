@@ -7,11 +7,11 @@
 
 #cadastro__section {
     width: 100%;
-    height: calc(100% - 63px);
+    height: calc(100% - 64px);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 
 #cadastro__section div img {
