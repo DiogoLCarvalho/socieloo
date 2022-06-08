@@ -36,10 +36,11 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    margin-top: -9%;
 }
 
 .ong__imagens #imagens__container .container__item img {
-    width: 350px;
+    width: 300px;
     display: block;
     margin: 0 auto;
 }
@@ -65,20 +66,22 @@ ul {
 }
 
 .informations__description h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .informations__description span {
-    font-size: 1.05em;
-    font-weight: bold;
+    font-size: 1em;
+    font-weight: 700;
 }
 
 .informations__description p {
-    font-weight: 500;
+    font-weight: normal;
     text-align: justify;
-    font-size: 1.15em;
+    font-size: 1em;
 }
-
+.description__about{
+    margin-bottom: 15px;
+}
 #description__social {
     display: block;
     width: 100%;
@@ -109,8 +112,16 @@ button {
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.7s;
 }
-
+input[type='button']:hover,
+button:hover {
+    border: #00a1ff solid 1px;
+    color: #00a1ff;
+    background-color: #fff;
+    transition: 0.7s;
+}
 input[type='button'] {
     width: 200px;
     padding: 10px;
@@ -122,7 +133,7 @@ input[type='button'] {
 
 .informations__comments {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:left;
     align-items: center;
     width: 100%;
 }
@@ -132,10 +143,13 @@ input[type='button'] {
     resize: none;
     border: 1px solid black;
 }
-
+#comments::placeholder{
+    padding-left: 10px;
+    padding-top: 2px;
+}
 .buttons__container {
     width: 13%;
-    margin-left: 50px;
+    margin-left: 2%;
 }
 
 button {
@@ -153,8 +167,10 @@ button img {
 }
 
 button p {
-    display: inline;
+    display: flex;
     vertical-align: 5px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* Responsividade */
@@ -204,6 +220,7 @@ button p {
     .ong__informations {
         width: 100%;
         padding: 50px;
+        margin: 0%;
     }
 
     .informations__comments {
