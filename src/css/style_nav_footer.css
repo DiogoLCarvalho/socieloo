@@ -116,10 +116,12 @@ footer{
         display: block;
         background-color: #00a1ff;
         position: absolute;
-        right: 35px;
+        width: 100%;
+        right: -5px;
         top:63px;
         padding-bottom: 10px;
-        height: 270px;
+        height: 330px;
+        z-index: 9999
     }
     .botão a{
         background-color: none;
@@ -134,9 +136,34 @@ footer{
         height: 30px;
         margin-top: 20px;
     }
+    .botão a{
+        background-color: none;
+        border: none;
+        padding: 0;
+        color: #fff;
+        border-radius: 0;
+        transition: 0.7s;
+    }
+    .botão a:hover{
+        background-color: #00a1ff;
+        border: none;
+        padding: 0;
+        color: #fff;
+        border-radius: 0;
+        transition: 0.7s;
+    }
     #menu li{
         position: relative;
         float: center;
+    }
+    #menu .links:nth-child(1):hover ~ .links:nth-child(2){
+        margin: 20px 10px;
+    }
+    #menu .links:nth-child(1):hover ~ .links:last-child{
+        padding-top: 0;
+    }
+    .login a:hover{
+        text-decoration: none;
     }
     .links a{
         color: #fff;
