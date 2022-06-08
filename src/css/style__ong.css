@@ -204,6 +204,8 @@ button p {
     .ong__informations {
         width: 100%;
         padding: 50px;
+        margin: 0%;
+        margin-bottom: 50px;
     }
 
     .informations__comments {
@@ -288,7 +290,10 @@ button p {
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
-
+    .ong__informations {
+        margin: 0%;
+        margin-bottom: 50px;
+    }
     .informations__comments {
         flex-direction: column;
     }
@@ -301,11 +306,16 @@ button p {
     .buttons__container {
         margin: 0;
         margin-top: 10px;
+        display: flex;
+    }
+
+    .buttons__container button+button {
+        margin-top: 0px;
     }
 
     .buttons__container button {
-        width: 150px;
-        padding: 13px;
+        width: 40%;
+        padding: 10px;
         font-size: 1.05em;
     }
 
@@ -313,7 +323,10 @@ button p {
         padding: 13px;
         font-size: 1.05em;
     }
-
+    #subTitle {
+        text-align: center;
+        margin-top: 30px;
+    }
     .informations__description h1 {
         margin-bottom: 10px;
     }
