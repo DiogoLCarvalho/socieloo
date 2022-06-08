@@ -12,6 +12,7 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    margin-top: -8.5%;
 }
 
 #cadastro__section div img {
@@ -245,10 +246,12 @@ input[type="checkbox"] {
 @media only screen and (max-width: 1050px) {
     .section__form {
         width: 80%;
+        margin-top: 5%;
     }
 
     #cadastro__section {
         flex-direction: column-reverse;
+        margin-top: 2%;
     }
 
     .section__radio {
