@@ -10,14 +10,14 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">
+        <a href="index.html" accesskey="1">
             <img src="src/imgs/Socieloo 1.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
         </a>
         <label for="bt_menu"><img src="src/imgs/menu.png" alt="menu"></label>
          <input type="checkbox" id="bt_menu"><!--menu responsivo-->  
         <ul id="menu">
             <li class="links">
-                <a href="">Segmentos▾</a>
+                <a href="#" accesskey="2">Segmentos▾</a>
                 <ul>
                     <li class="sublink"><a href="">Cidadania</a></li>
                     <li class="sublink"><a href="">Cultura e Esportes</a></li>
@@ -29,7 +29,7 @@
                 </ul>
             </li>
             <li class="links">
-                <a href="">Região▾</a>
+                <a href="#"  accesskey="3">Região▾</a>
                 <ul>
                     <li class="sublink"><a href="">Zona Leste</a></li>
                     <li class="sublink"><a href="">Zona Norte</a></li>
@@ -39,17 +39,17 @@
                 </ul>
             </li>
             <li class="links">
-                <a href="">Acessibilidade▾</a>
+                <a href="src/pages/acessibilidade.html" accesskey="4">Acessibilidade▾</a>
                 <ul>
                     <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
                     <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
                     <li class="sublink"><a href="" title="Aumentar fonte">Aumentar fonte +</a></li>
                     <li class="sublink"><a href="" title="Diminuir fonte">Diminuir fonte -</a></li>
-                    <li class="sublink"><a href="" title="Manual de acessibilidade">Acessibilidade</a></li>
+                    <li class="sublink"><a href="src/pages/acessibilidade.html" title="Manual de acessibilidade">Acessibilidade</a></li>
                 </ul>
             </li>
-            <li class="links login"><a href="src/pages/login.html">Fazer login</a></li>
-            <li class="links botão"><a href="src/pages/cadastro.html">Cadastre sua Ong</a></li>
+            <li class="links login"><a href="src/pages/login.html"  accesskey="5">Fazer login</a></li>
+            <li class="links botão"><a href="src/pages/cadastro.html"  accesskey="6">Cadastre sua Ong</a></li>
         </ul>
     </nav>
 
@@ -141,6 +141,17 @@
                 <a href="src/pages/ong.html" class="button">Saúde</a><a href="src/pages/ong.html" class="button">Zona Leste</a>
             </div>
         </a>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </main>
     <footer>
         <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p> 

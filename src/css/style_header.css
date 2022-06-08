@@ -20,6 +20,7 @@ nav ul{
     display: flex;
     list-style: none;
     align-items: center;
+    z-index:99;
 }
 .links{
     margin: 0 10px;
@@ -93,7 +94,7 @@ label[for="bt_menu"]{
 
 
 /***********************************/
-@media screen and (max-width:800px){
+@media screen and (max-width:857px){
     /*tirar menu*/
     #menu{
         display: none;
