@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon">
+    <meta name="description"
+        content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda.">
+    <meta name="keywords"
+        content="Projetos, FATEC, acessibilidade, Ong, ajuda, instituições, doações, voluntários, desigualdades sociais, políticas públicas, socieloo, cpdev">
+    <meta name="author"
+        content="Aryel Anne, Ademir Martins, Bianca Jesus, Diogo Lima, Fernanda Sena, Leonardo Cajé (Cross-Plataform Dev)">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="robots" content="index,follow">
+
+    <!-- Meta dados facebook -->
+    <meta property="og:url" content="diogolcarvalho.github.io/socieloo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Socieloo - Construindo pontes" />
+    <meta property="og:site_name" content="Socieloo" />
+    <meta property="og:description"
+        content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda." />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/DiogoLCarvalho/socieloo/main/src/imgs/Socieloo-logo.png" />
+        
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style__cadastrar.css">
     <link rel="stylesheet" href="../css/style_header.css">
     <title>Cadastro - Socieloo</title>
 </head>
+
 <body>
 
 
@@ -17,7 +40,8 @@
                 <img src="../imgs/Socieloo-logo.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
             </a>
             <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
-             <input type="checkbox" id="bt_menu"><!--menu responsivo-->  
+            <input type="checkbox" id="bt_menu">
+            <!--menu responsivo-->
             <ul id="menu">
                 <li class="links">
                     <a href="#" accesskey="2">Segmentos▾</a>
@@ -32,7 +56,7 @@
                     </ul>
                 </li>
                 <li class="links">
-                    <a href="#"  accesskey="3">Região▾</a>
+                    <a href="#" accesskey="3">Região▾</a>
                     <ul>
                         <li class="sublink"><a href="">Zona Leste</a></li>
                         <li class="sublink"><a href="">Zona Norte</a></li>
@@ -42,20 +66,21 @@
                     </ul>
                 </li>
                 <li class="links">
-                    <a href="acessibilidade.html"  accesskey="4">Acessibilidade▾</a>
+                    <a href="acessibilidade.html" accesskey="4">Acessibilidade▾</a>
                     <ul>
                         <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
                         <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
                         <li class="sublink"><a href="" title="Aumentar fonte">Aumentar fonte +</a></li>
                         <li class="sublink"><a href="" title="Diminuir fonte">Diminuir fonte -</a></li>
-                        <li class="sublink"><a href="acessibilidade.html" title="Manual de acessibilidade">Acessibilidade</a></li>
+                        <li class="sublink"><a href="acessibilidade.html"
+                                title="Manual de acessibilidade">Acessibilidade</a></li>
                     </ul>
                 </li>
                 <li class="links botão"><a href="login.html" accesskey="5">Fazer login</a></li>
             </ul>
         </nav>
-    
-        
+
+
         <section id="cadastro__section">
             <div>
                 <img src="../imgs/recy.png" alt="imagem ilustrativa">
@@ -64,7 +89,7 @@
                 <form>
                     <h1 class="section__title">Cadastre sua ONG</h1>
 
-                    <section  class="form__group">
+                    <section class="form__group">
                         <div class="group__text">
                             <label for="nome">Nome</label>
                             <input type="text" id="nome" name="nome" required placeholder="Socieloo">
@@ -124,10 +149,15 @@
                                     <input type="radio" id="meioAmbiente" name="causa">
                                     <label for="meioAmbiente">Meio ambiente</label>
                                 </div>
-                                
+
                                 <div class="radio__options">
                                     <input type="radio" id="protecaoAmbiental" name="causa">
                                     <label for="protecaoAmbiental">Proteção Ambiental</label>
+                                </div>
+
+                                <div class="radio__options">
+                                    <input type="radio" id="outro" name="causa">
+                                    <label for="outro">Outro</label>
                                 </div>
                             </div>
 
@@ -135,7 +165,7 @@
                                 <input type="checkbox" name="termos" id="termos">
                                 <label for="termos">Eu concordo com os <a href="#">termos e condições</a></label>
                             </div>
-                            
+
                             <button class="options__submit">Avançar</button>
                         </div>
                     </section>
@@ -145,8 +175,10 @@
 
             <section class="section__radio">
                 <ul class="radio__group">
-                    <li><input class="radio__input" name="process" id="radio-one" type='radio' checked><span class="radio__span-one"></span></li>
-                    <li><input class="radio__input" name="process" id="radio-two" type='radio'><span class="radio__span-two"></span></li>
+                    <li><input class="radio__input" name="process" id="radio-one" type='radio' checked><span
+                            class="radio__span-one"></span></li>
+                    <li><input class="radio__input" name="process" id="radio-two" type='radio'><span
+                            class="radio__span-two"></span></li>
                     <li><input class="radio__input" name="process" id="radio-three" type='radio'></li>
                 </ul>
             </section>
@@ -165,4 +197,5 @@
 
     </main>
 </body>
+
 </html>

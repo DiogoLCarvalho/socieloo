@@ -113,7 +113,7 @@ label[for="termos"]>a {
 
 label[for="termos"],
 #termos {
-    font-size: .92em;
+    font-size: .83em;
     margin-bottom: 10px;
 }
 
@@ -152,8 +152,8 @@ label[for="termos"],
 .radio__input {
     cursor: pointer;
     appearance: none;
-    width: 30px;
-    height: 30px;
+    width: 29px;
+    height: 29px;
     border: 3px solid #00a1ff;
     border-radius: 50%;
     position: relative;
@@ -166,8 +166,8 @@ label[for="termos"],
 
 .radio__input:before {
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     background: #00a1ff;
     border-radius: 50%;
     opacity: 0;
@@ -187,9 +187,9 @@ label[for="termos"],
 .radio__span-one:after {
     content: ' ';
     position: absolute;
-    left: 40px;
-    width: 14%;
-    border: 2px solid #00a1ff;
+    left: 37px;
+    width: 17%;
+    border-top: 5px solid #00a1ff;
     margin-top: -10.3%;
 }
 
@@ -197,9 +197,9 @@ label[for="termos"],
 .radio__span-two:after {
     content: ' ';
     position: absolute;
-    left: 92px;
-    width: 16%;
-    border: 2px solid #00a1ff;
+    left: 91px;
+    width: 17%;
+    border-top: 5px solid #00a1ff;
     margin-top: -10.3%;
 }
 
@@ -324,5 +324,11 @@ input[type="checkbox"] {
 @media screen and (max-height:700px) {
     #cadastro__section{
         height: 120vh;
+    }
+}
+
+@media screen and (max-height:880px) {
+    .section__form {
+        height: max-content;
     }
 }
