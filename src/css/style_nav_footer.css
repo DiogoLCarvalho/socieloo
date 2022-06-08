@@ -9,7 +9,9 @@ nav{
     margin:0 5%;
     justify-content: space-between;
     font-size: 0.9rem;
+    border-bottom: rgba(128, 128, 128, 0.407) 1px solid;
 }
+
 nav img{
     float:right;
 }
