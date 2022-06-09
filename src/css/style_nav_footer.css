@@ -8,7 +8,7 @@ nav{
     display: flex;
     margin:0 5%;
     justify-content: space-between;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     border-bottom: rgba(128, 128, 128, 0.407) 1px solid;
 }
 
@@ -102,7 +102,7 @@ footer{
     width: 100%;
     padding: 5px 0;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.6em;
 }
 
 @media screen and (max-width:859px){

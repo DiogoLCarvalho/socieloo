@@ -22,17 +22,18 @@ aside input:not(#lembrar){
     width: 250px;
     height: 30px;
     margin: 5px 0;
+    font-size: 0.81em;
 }
 aside p{
     margin-bottom: 15px;
 }
 aside a{
-    font-size: small;
+    font-size: 0.81em;
     color:#00a1ff;
     float:right;
 }
 aside label[for="lembrar"]{
-    font-size: small;
+    font-size: 0.81em;
     justify-content: baseline;
 }
 #entrar{
@@ -63,6 +64,8 @@ aside label[for="lembrar"]{
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    font-size: 0.81em;
+
 }
 #google:hover{
     background-color: #fff;
@@ -76,7 +79,7 @@ aside label[for="lembrar"]{
 }
 .cadastro{
     margin-left: 40px;
-    font-size: small;
+    font-size: 0.81em;
 }
 .cadastro a{
     float: none;
