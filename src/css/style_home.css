@@ -128,25 +128,44 @@ a .card h2{
     transition: 0.7s;
 }
 /***********************************/
+@media screen and (max-width:1388px){
+    /**********************/
+    .principal{
+        background-size: contain; 
+    }
+}
 @media screen and (max-width:800px){
     /**********************/
     .principal{
-        height: 500px;
+        height: 300px;
     }
     h1{
         font-size: 1.2rem;
     }
     .busca{
         height: 250px;
+        margin-top: 90px;
+    }
+    main{
+        margin: 20px 10vw;
     }
 }
 @media screen and (max-width:750px){
     .principal{
-        height: 500px;
+        height: 300px;
+    }
+    .busca{
+        width: 85vw;
+    }
+    main{
+        margin: 20px 10vw;
     }
 }
 @media screen and (max-width:530px){
     h1{
         font-size: 1rem;
+    }
+    .principal{
+        height: 350px;
     }
 }
