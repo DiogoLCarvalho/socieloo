@@ -1,7 +1,7 @@
 nav{
     border-bottom:rgba(128, 128, 128, 0.407) 1px solid;
 }
-main{
+#main-login{
     display: flex;
     flex-wrap: wrap;
     height: 87vh;
@@ -9,30 +9,30 @@ main{
     align-content: center;
     align-items: center;
 }
-section{
+#main-login section{
     float: left;
 }
-aside{
+#main-login aside{
     padding-top: 100px;
     float:right;
     border-left: #00a1ff 1px solid;
     padding-left: 19vw;
 }
-aside input:not(#lembrar){
+#main-login aside input:not(#lembrar){
     width: 250px;
     height: 30px;
     margin: 5px 0;
     font-size: 0.81em;
 }
-aside p{
+#main-login aside p{
     margin-bottom: 15px;
 }
-aside a{
+#main-login aside a{
     font-size: 0.81em;
     color:#00a1ff;
     float:right;
 }
-aside label[for="lembrar"]{
+#main-login aside label[for="lembrar"]{
     font-size: 0.81em;
     justify-content: baseline;
 }
@@ -86,10 +86,10 @@ aside label[for="lembrar"]{
 }
 
 @media screen and (max-width:670px){
-    section{
+    #main-login section{
         display: none;
     }
-    aside{
+    #main-login aside{
         margin: 0 auto;
         border: 0;
         padding: 0;

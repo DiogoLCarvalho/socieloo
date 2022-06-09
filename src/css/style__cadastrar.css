@@ -5,6 +5,10 @@
     font-size: 1em;
 }
 
+#home-acess{
+    z-index: 999;
+}
+
 #cadastro__section {
     width: 100%;
     height: calc(100% - 63px);
