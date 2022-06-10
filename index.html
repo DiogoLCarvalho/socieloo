@@ -18,15 +18,21 @@
     <!-- Meta dados facebook -->
     <meta property="og:url" content="diogolcarvalho.github.io/socieloo" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Socieloo - Construindo pontes" />
+    <meta property="og:title" content="Socieloo - Construindo elos sociais" />
     <meta property="og:site_name" content="Socieloo" />
-    <meta property="og:description" content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/DiogoLCarvalho/socieloo/main/src/imgs/Socieloo-logo.png" />
+    <meta property="og:description"
+        content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda." />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/DiogoLCarvalho/socieloo/main/src/imgs/Socieloo-logo.png" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/style_home.css">
     <link rel="stylesheet" href="src/css/style_nav_footer.css">
-    <script src="/src/js/fonte.js"></script>
+    <script src="src/js/fonte.js"></script>
     <title>Inicio - Socieloo</title>
 </head>
 
@@ -62,13 +68,20 @@
                 </ul>
             </li>
             <li class="links">
-                <a href="src/pages/acessibilidade.html" accesskey="4">Acessibilidade▾</a>
+                <a href="#" accesskey="4">Acessibilidade▾</a>
                 <ul>
-                    <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
-                    <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
-                    <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte">Aumentar fonte +</a></li>
-                    <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte">Diminuir fonte -</a></li>
-                    <li class="sublink"><a href="" title="Manual de acessibilidade">Acessibilidade</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste">Contraste
+                            ◉</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste">Sem
+                            contraste ○</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
+                            accesskey="b">Aumentar fonte
+                            +</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte"
+                            accesskey="s">Diminuir fonte
+                            -</a></li>
+                    <li class="sublink"><a href="src/pages/acessibilidade.html"
+                            title="Manual de acessibilidade">Acessibilidade</a></li>
                 </ul>
             </li>
             <li class="links login"><a href="src/pages/login.html" accesskey="5">Fazer login</a></li>
@@ -80,7 +93,7 @@
 
     <section class="principal">
         <div class="busca">
-            <h1>Um ato de bondade pode ajudar muita gente!</h1>
+            <h1 id="title-index">Um ato de bondade pode ajudar muita gente!</h1>
             <br>
             <div class="buscador">
                 <select name="Segmentos" id="segmentos">
@@ -109,7 +122,8 @@
             </div>
         </div>
     </section>
-    <main>
+
+    <main id="main-index">
         <a href="src/pages/ong.html">
             <div class="card">
                 <div class="img pa">
@@ -185,6 +199,15 @@
     <footer>
         <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p>
     </footer>
+
+
+    <!-- Contraste -->
+    <script type="module">
+        import contraste from "/src/js/contraste.js";
+
+        contraste.contraste("src/css/style_home.css","../src/css/contraste.css");
+
+    </script>
 </body>
 
 </html>

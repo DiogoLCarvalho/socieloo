@@ -18,7 +18,7 @@
     <!-- Meta dados facebook -->
     <meta property="og:url" content="diogolcarvalho.github.io/socieloo" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Socieloo - Construindo pontes" />
+    <meta property="og:title" content="Socieloo - Construindo elos sociais" />
     <meta property="og:site_name" content="Socieloo" />
     <meta property="og:description"
         content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda." />
@@ -28,7 +28,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style__cadastrar.css">
     <link rel="stylesheet" href="../css/style_header.css">
-    <script src="/src/js/fonte.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="../js/fonte.js"></script>
+
     <title>Cadastro - Socieloo</title>
 </head>
 
@@ -37,7 +44,7 @@
 
     <main id="cadastro">
         <nav>
-            <a href="../../index.html" accesskey="1">
+            <a href="../../index.html" accesskey="1" id="home-acess">
                 <img src="../imgs/Socieloo-logo.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
             </a>
             <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
@@ -67,13 +74,13 @@
                     </ul>
                 </li>
                 <li class="links">
-                    <a href="acessibilidade.html" accesskey="4">Acessibilidade▾</a>
+                    <a href="#" accesskey="4">Acessibilidade▾</a>
                     <ul>
-                        <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
-                        <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
-                        <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte">Aumentar fonte +</a></li>
-                        <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte">Diminuir fonte -</a></li>
-                        <li class="sublink"><a href="" title="Manual de acessibilidade">Acessibilidade</a></li>
+                        <li class="sublink"><a href="" title="Ativar contraste" id="contraste">Contraste ◉</a></li>
+                        <li class="sublink"><a href="" title="Desativar contraste" id="sem-contraste">Sem contraste ○</a></li>
+                        <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte" accesskey="b">Aumentar fonte +</a></li>
+                        <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte" accesskey="s">Diminuir fonte -</a></li>
+                        <li class="sublink"><a href="acessibilidade.html" title="Manual de acessibilidade">Acessibilidade</a></li>
                     </ul>
                 </li>
                 <li class="links botão"><a href="login.html" accesskey="5">Fazer login</a></li>
@@ -196,6 +203,12 @@
         </script>
 
     </main>
+    <script type="module">
+        import contraste from "../js/contraste.js";
+
+        contraste.contraste("../css/style__cadastrar.css", '../css/contraste.css');
+
+    </script>
 </body>
 
 </html>

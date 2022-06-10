@@ -1,0 +1,179 @@
+/* CONTRASTE DA NAV e FOOTER */
+body{
+    background-color: #000;
+}
+nav{
+    border-bottom: white;
+}
+
+nav img{
+    filter: invert(1);
+}
+.links a{
+    color: yellow;
+}
+
+.links ul{
+    background-color: #000;
+}
+
+.login a:hover{
+    text-decoration: underline white 1px;
+}
+.links ul li{
+    border-bottom: white solid 1px;
+}
+
+.links ul li a{
+    color: yellow;
+}
+
+.botão a{
+    background-color: white;
+    border: white solid 1px;
+    color: #000;
+}
+
+.botão a:hover{
+    border: #fff solid 1px;
+    color: #fff;
+    background-color: #000;
+}
+
+label img{
+    background-color: black;
+}
+
+footer{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:859px){
+    #bt_menu:checked ~ #menu{
+        background-color: black;
+    }
+    .links a{
+        color: #fff;
+    }
+
+    .botão a{
+        color: black;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ESTILO HOME */
+
+.busca{
+    background-color: #000;
+}
+
+.search{
+    background-color: #fff;
+}
+.search img{
+    filter: contrast(0);
+}
+/*cards*/
+.card{
+    box-shadow:0px 5px 10px white;
+    background-color: white;
+}
+a:hover .card{
+    box-shadow:0px 3px 15px black;
+}
+.card a:-webkit-any-link{
+    color: #000;
+}
+.card h2{
+    color: #000;
+}
+#title-index{
+    color: #fff;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* acessibilidade */
+#content {
+    box-shadow: 5px 3px 5px #fff;
+}
+
+#content>p.content__text-acess,#title-acess {
+    color: white;
+}
+#content>p.content__text-acess a {
+    color: yellow;
+}
+code {
+    color: #000;
+    background-color: #f1f1f1;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Cadastro */
+.section__form{
+    background-color: #fff;
+    border: 1px solid white;
+    box-shadow: 1px 2px 5px #fff;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* LOGIN */
+#main-login aside{
+    border-left: #fff 1px solid;
+}
+#main-login aside a{
+    color:yellow;
+}
+
+#entrar{
+    background-color: white;
+    color: #000;
+    border: #fff;
+}
+
+#entrar:hover{
+    border: #fff solid 1px;
+    color: #fff;
+    background-color: #000;
+}
+#google{
+    background-color: #000;
+    border: solid 1px #000;
+    color: #fff;
+}
+#login{
+    color: #fff;
+}
+#main-login section img{
+    filter: invert(1);
+}
+#lembrar{
+    accent-color: white;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ONG */
+.section__ong{
+    color: white;
+}
+.social__item a >img,.buttons__container button p + img{
+    filter: invert(1);
+}
+
+.informations__botons > .informations__donation > input[type='button'],
+.informations__botons button {
+    background-color: #fff;
+    border: #fff solid 1px;
+    color: #000;
+}
+    
+.btSlider {
+    background-color: white;
+    color: #000;
+}
