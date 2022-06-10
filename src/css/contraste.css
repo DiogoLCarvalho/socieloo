@@ -96,4 +96,84 @@ a:hover .card{
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* acessibilidade */
+#content {
+    box-shadow: 5px 3px 5px #fff;
+}
 
+#content>p.content__text-acess,#title-acess {
+    color: white;
+}
+#content>p.content__text-acess a {
+    color: yellow;
+}
+code {
+    color: #000;
+    background-color: #f1f1f1;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Cadastro */
+.section__form{
+    background-color: #fff;
+    border: 1px solid white;
+    box-shadow: 1px 2px 5px #fff;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* LOGIN */
+#main-login aside{
+    border-left: #fff 1px solid;
+}
+#main-login aside a{
+    color:yellow;
+}
+
+#entrar{
+    background-color: white;
+    color: #000;
+    border: #fff;
+}
+
+#entrar:hover{
+    border: #fff solid 1px;
+    color: #fff;
+    background-color: #000;
+}
+#google{
+    background-color: #000;
+    border: solid 1px #000;
+    color: #fff;
+}
+#login{
+    color: #fff;
+}
+#main-login section img{
+    filter: invert(1);
+}
+#lembrar{
+    accent-color: white;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ONG */
+.section__ong{
+    color: white;
+}
+.social__item a >img,.buttons__container button p + img{
+    filter: invert(1);
+}
+
+.informations__botons > .informations__donation > input[type='button'],
+.informations__botons button {
+    background-color: #fff;
+    border: #fff solid 1px;
+    color: #000;
+}
+    
+.btSlider {
+    background-color: white;
+    color: #000;
+}

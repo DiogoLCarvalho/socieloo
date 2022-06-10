@@ -35,7 +35,6 @@
 
     <!-- JS -->
     <script src="/src/js/fonte.js"></script>
-    <script src="../js/contraste.js"></script>
 
     <title>Login - Socieloo</title>
 </head>
@@ -74,11 +73,15 @@
             <li class="links">
                 <a href="#" accesskey="4">Acessibilidade▾</a>
                 <ul>
-                    <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
-                    <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
-                    <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte" accesskey="b">Aumentar fonte +</a></li>
-                    <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte" accesskey="s">Diminuir fonte -</a></li>
-                    <li class="sublink"><a href="acessibilidade.html" title="Manual de acessibilidade">Acessibilidade</a></li>
+                    <li class="sublink"><a href="" title="Ativar contraste" id="contraste">Contraste ◉</a></li>
+                    <li class="sublink"><a href="" title="Desativar contraste" id="sem-contraste">Sem contraste ○</a>
+                    </li>
+                    <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
+                            accesskey="b">Aumentar fonte +</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte"
+                            accesskey="s">Diminuir fonte -</a></li>
+                    <li class="sublink"><a href="acessibilidade.html"
+                            title="Manual de acessibilidade">Acessibilidade</a></li>
                 </ul>
             </li>
             <li class="links botão"><a href="cadastro.html" accesskey="5">Cadastre sua Ong</a></li>
@@ -122,6 +125,13 @@
     <footer>
         <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p>
     </footer>
+
+    <script type="module">
+        import contraste from "../js/contraste.js";
+
+        contraste.contraste("../css/style_login.css", '../css/contraste.css');
+
+    </script>
 </body>
 
 </html>

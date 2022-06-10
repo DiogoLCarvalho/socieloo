@@ -1,11 +1,11 @@
 //script contraste	
 
-function contraste(caminho) {
-    
+function contraste(caminho, contraste) {
     var link_css = caminho;
 
+
     if (getCookie2() == "contraste") {
-        link_css = "../src/css/contraste.css"; // se o valor do cookie capturado pela function getCookie2 for contraste, a variável link_css recebe como valor a folha de estilo contraste.css
+        link_css = contraste; // se o valor do cookie capturado pela function getCookie2 for contraste, a variável link_css recebe como valor a folha de estilo contraste.css
     } else if (getCookie() == "default") {
         link_css = caminho;
     }
@@ -64,6 +64,6 @@ function contraste(caminho) {
 }
 
 
-export default { 
+export default {
     contraste: contraste
 };

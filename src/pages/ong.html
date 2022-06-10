@@ -76,8 +76,8 @@
                 <li class="links">
                     <a href="#" accesskey="4">Acessibilidade▾</a>
                     <ul>
-                        <li class="sublink"><a href="" title="Ativar contraste">Contraste ◉</a></li>
-                        <li class="sublink"><a href="" title="Desativar contraste">Sem contraste ○</a></li>
+                        <li class="sublink"><a href="" title="Ativar contraste" id="contraste">Contraste ◉</a></li>
+                        <li class="sublink"><a href="" title="Desativar contraste" id="sem-contraste">Sem contraste ○</a></li>
                         <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte" accesskey="b">Aumentar
                                 fonte +</a></li>
                         <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte" accesskey="s">Diminuir
@@ -258,8 +258,14 @@
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
     </main>
-    <script src="../js/carrossel.js"></script>
 
+    <script type="module">
+        import contraste from "../js/contraste.js";
+
+        contraste.contraste("../css/style__ong.css", '../css/contraste.css');
+
+    </script>
+    <script src="../js/carrossel.js"></script>
 </body>
 
 </html>
