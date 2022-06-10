@@ -33,6 +33,15 @@
     <link rel="stylesheet" href="src/css/style_home.css">
     <link rel="stylesheet" href="src/css/style_nav_footer.css">
     <script src="src/js/fonte.js"></script>
+
+    <!-- Contraste -->
+    <script type="module">
+        import contraste from "./src/js/contraste.js";
+
+        contraste.contraste("src/css/style_home.css", "../src/css/contraste.css");
+
+    </script>
+    
     <title>Inicio - Socieloo</title>
 </head>
 
@@ -70,9 +79,9 @@
             <li class="links">
                 <a href="#" accesskey="4">Acessibilidade▾</a>
                 <ul>
-                    <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste">Contraste
+                    <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste" accesskey="c">Contraste
                             ◉</a></li>
-                    <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste">Sem
+                    <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste" accesskey="z">Sem
                             contraste ○</a></li>
                     <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
                             accesskey="b">Aumentar fonte
@@ -201,13 +210,7 @@
     </footer>
 
 
-    <!-- Contraste -->
-    <script type="module">
-        import contraste from "./src/js/contraste.js";
 
-        contraste.contraste("src/css/style_home.css","../src/css/contraste.css");
-
-    </script>
 </body>
 
 </html>

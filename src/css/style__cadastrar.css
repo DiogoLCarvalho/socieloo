@@ -267,7 +267,7 @@ input[type="checkbox"] {
     }
 
     #cadastro {
-        font-size: 14px;
+        font-size: 0.88em;
     }
 }
 
@@ -304,7 +304,7 @@ input[type="checkbox"] {
 }
 @media screen and (max-width:400px){
     #cadastro {
-        font-size: 12px;
+        font-size: 0.75em;
     }
     .radio__span-two:before, .radio__span-two:after{
         width: 13%;
