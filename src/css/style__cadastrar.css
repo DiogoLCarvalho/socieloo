@@ -3,22 +3,33 @@
     width: 100%;
     height: 100vh;
     font-size: 1em;
+    display: flex;
 }
-
 #home-acess{
     z-index: 999;
 }
+aside {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    border-right: #00a1ff 1px solid;
+}
 
+aside img{
+    width: auto;
+    height: 100vh;
+}
 #cadastro__section {
     width: 100%;
     height: calc(100% - 63px);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
-    margin-top: -8.5%;
+    margin-top: -4.8%;
+    background-color: #fff;
+    padding-right: 2%;
 }
-
 #cadastro__section div img {
     width: 400px;
 }
@@ -143,6 +154,7 @@ label[for="termos"],
 .section__radio {
     position: absolute;
     top: 85%;
+    margin-left: 20%;
 }
 
 .radio__group {
@@ -226,10 +238,9 @@ input[type="checkbox"] {
         vertical-align: 1px
     }
 }
-
 @media only screen and (max-width: 1440px) {
     .section__form {
-        width: 65%;
+        width: 90%;
     }
 
     #cadastro__section div img {
@@ -248,6 +259,9 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 1050px) {
+    aside{
+        display: none;
+    }
     .section__form {
         width: 80%;
         margin-top: 5%;
@@ -330,7 +344,7 @@ input[type="checkbox"] {
 }
 @media screen and (max-height:700px) {
     #cadastro__section{
-        height: 120vh;
+        height: 109.8vh;
     }
 }
 

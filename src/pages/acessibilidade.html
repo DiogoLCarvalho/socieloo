@@ -40,6 +40,18 @@
 </head>
 
 <body>
+    <div id="acessibilidade">
+        <ul id="atalhos">
+            <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+            <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+            <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
+            <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>              
+            <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
+            <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+        </ul>
+    </div>
     <main id="main-acess">
         <nav>
             <a href="../../index.html" accesskey="1">
@@ -71,16 +83,26 @@
                         <li class="sublink"><a href="">Zona Sul</a></li>
                     </ul>
                 </li>
-                <li class="links">
+                <li class="links acess">
                     <a href="#" accesskey="4">Acessibilidade▾</a>
                     <ul>
-                        <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste" accesskey="c">Contraste ◉</a></li>
-                        <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste" accesskey="z">Sem contraste ○</a></li>
+                        <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+                        <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+                        <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+                        <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste"
+                                accesskey="c">Contraste
+                                ◉</a></li>
+                        <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste"
+                                accesskey="z">Sem
+                                contraste ○</a></li>
                         <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
-                                accesskey="b">Aumentar fonte +</a></li>
+                                accesskey="b">Aumentar fonte
+                                +</a></li>
                         <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte"
-                                accesskey="s">Diminuir fonte -</a></li>
-                        <li class="sublink"><a href="#" title="Manual de acessibilidade">Acessibilidade</a></li>
+                                accesskey="s">Diminuir fonte
+                                -</a></li>
+                        <li class="sublink"><a href="src/pages/acessibilidade.html"
+                                title="Manual de acessibilidade">Acessibilidade</a></li>
                     </ul>
                 </li>
                 <li class="links botão"><a href="cadastro.html" accesskey="5">Cadastre sua Ong</a></li>
@@ -266,6 +288,12 @@
         contraste.contraste("../css/acessibilidade.css", "../css/contraste.css");
 
     </script>
+        <script type="module">
+            import contraste from "./src/js/contraste2.js";
+    
+            contraste.contraste("src/css/style_acessibilidade.css", "src/css/contraste.css");
+    
+        </script>
 </body>
 
 </html>

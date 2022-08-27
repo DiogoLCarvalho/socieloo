@@ -27,6 +27,7 @@
         
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style__cadastrar.css">
+    <link rel="stylesheet" href="src/css/style_nav_footer.css">
     <link rel="stylesheet" href="../css/style_header.css">
 
     <!-- jquery -->
@@ -40,22 +41,31 @@
 </head>
 
 <body>
-
-
-    <main id="cadastro">
-        <nav>
-            <a href="../../index.html" accesskey="1" id="home-acess">
-                <img src="../imgs/Socieloo-logo.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
-            </a>
-            <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
-            <input type="checkbox" id="bt_menu">
-            <!--menu responsivo-->
-            <ul id="menu">
-                <li class="links">
-                    <a href="#" accesskey="2">Segmentos▾</a>
-                    <ul>
-                        <li class="sublink"><a href="">Cidadania</a></li>
-                        <li class="sublink"><a href="">Cultura e Esportes</a></li>
+    <div id="acessibilidade">
+        <ul id="atalhos">
+            <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+            <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+            <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
+            <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>              
+            <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
+            <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+        </ul>
+    </div>
+    <nav>
+        <a href="../../index.html" accesskey="1" id="home-acess">
+            <img src="../imgs/Socieloo-logo.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
+        </a>
+        <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <!--menu responsivo-->
+        <ul id="menu">
+            <li class="links">
+                <a href="#" accesskey="2">Segmentos▾</a>
+                <ul>
+                    <li class="sublink"><a href="">Cidadania</a></li>
+                    <li class="sublink"><a href="">Cultura e Esportes</a></li>
                         <li class="sublink"><a href="">Educação</a></li>
                         <li class="sublink"><a href="">Gênero e Diversidade</a></li>
                         <li class="sublink"><a href="">Meio Ambiente</a></li>
@@ -73,25 +83,37 @@
                         <li class="sublink"><a href="">Zona Sul</a></li>
                     </ul>
                 </li>
-                <li class="links">
+                <li class="links acess">
                     <a href="#" accesskey="4">Acessibilidade▾</a>
                     <ul>
-                        <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste" accesskey="c">Contraste ◉</a></li>
-                        <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste" accesskey="z">Sem contraste ○</a></li>
-                        <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte" accesskey="b">Aumentar fonte +</a></li>
-                        <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte" accesskey="s">Diminuir fonte -</a></li>
-                        <li class="sublink"><a href="acessibilidade.html" title="Manual de acessibilidade">Acessibilidade</a></li>
-                    </ul>
-                </li>
-                <li class="links botão"><a href="login.html" accesskey="5">Fazer login</a></li>
-            </ul>
-        </nav>
-
-
+                        <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+                        <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+                        <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+                        <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste"
+                            accesskey="c">Contraste
+                            ◉</a></li>
+                            <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste"
+                                accesskey="z">Sem
+                                contraste ○</a></li>
+                                <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
+                                    accesskey="b">Aumentar fonte
+                                    +</a></li>
+                                    <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte"
+                                        accesskey="s">Diminuir fonte
+                                        -</a></li>
+                                        <li class="sublink"><a href="src/pages/acessibilidade.html"
+                                            title="Manual de acessibilidade">Acessibilidade</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="links botão"><a href="login.html" accesskey="5">Fazer login</a></li>
+                                </ul>
+                            </nav>
+    <main id="cadastro">
+        <aside>
+            <img src="../imgs/icons.svg" alt="">
+        </aside>
+        
         <section id="cadastro__section">
-            <div>
-                <img src="../imgs/recy.png" alt="imagem ilustrativa">
-            </div>
             <div class="section__form">
                 <form>
                     <h1 class="section__title">Cadastre sua ONG</h1>
@@ -177,20 +199,23 @@
                         </div>
                     </section>
                 </form>
+                <section class="section__radio">
+                    <ul class="radio__group">
+                        <li><input class="radio__input" name="process" id="radio-one" type='radio' checked><span
+                                class="radio__span-one"></span></li>
+                        <li><input class="radio__input" name="process" id="radio-two" type='radio'><span
+                                class="radio__span-two"></span></li>
+                        <li><input class="radio__input" name="process" id="radio-three" type='radio'></li>
+                    </ul>
+                </section>
 
             </div>
 
-            <section class="section__radio">
-                <ul class="radio__group">
-                    <li><input class="radio__input" name="process" id="radio-one" type='radio' checked><span
-                            class="radio__span-one"></span></li>
-                    <li><input class="radio__input" name="process" id="radio-two" type='radio'><span
-                            class="radio__span-two"></span></li>
-                    <li><input class="radio__input" name="process" id="radio-three" type='radio'></li>
-                </ul>
-            </section>
         </section>
-
+    </main>
+        <footer>
+            <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p>
+        </footer>
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
@@ -202,13 +227,18 @@
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
 
-    </main>
     <script type="module">
         import contraste from "../js/contraste.js";
 
         contraste.contraste("../css/style__cadastrar.css", '../css/contraste.css');
 
     </script>
+        <script type="module">
+            import contraste from "./src/js/contraste2.js";
+    
+            contraste.contraste("src/css/style_cadastrar.css", "src/css/contraste.css");
+    
+        </script>
 </body>
 
 </html>

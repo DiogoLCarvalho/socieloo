@@ -6,6 +6,49 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#acessibilidade{
+    height: 26px;
+    line-height: 18px;
+    width: 100%;
+    background-color: #ebebeb;
+    color:#43555f ;
+}
+#acessibilidade a{
+    color: #43555f; 
+}
+#atalhos li{
+    padding: 0 10px;
+    list-style:none;
+    display: inline;
+}
+#atalhos li a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+#atalhos li a:hover{
+    color: #000;
+    transition: 0.5s;
+}
+.fonte, .contraste,#pgacess {
+    float: right;
+}
+#atalhos{
+    padding:5px 4.5% 5px 4.5%;
+}
+.fonte, #pgacess, .atalho{
+    font-size: 0.85rem;
+}
+.contraste{
+    font-size: 1.7rem;
+    line-height: 9px;
+}
+.s{
+    font-size: 1.05rem;
+    line-height: 15px;
+}
+.acess{
+    display: none;
+}
 nav{
     display: flex;
     margin:0 5%;
@@ -34,7 +77,7 @@ nav ul{
 }
 .links ul{
     position: absolute;
-    top: 63px;
+    top: 89px;
     display: none;
     background-color: #00a1ff;
     margin: 0;
@@ -91,6 +134,16 @@ label[for="bt_menu"]{
 #bt_menu{
     display: none;
 }
+/*footer*/
+footer{
+    background-color: rgb(192, 192, 192);
+    color: rgb(84, 84, 84);
+    bottom:0;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 0.6em;
+}
 
 
 /***********************************/
@@ -103,6 +156,9 @@ label[for="bt_menu"]{
         display: block;
         float: right;
     }
+    #acessibilidade{
+        display: none;
+    }
     #bt_menu:checked ~ #menu{
         display: block;
         background-color: #00a1ff;
@@ -113,6 +169,9 @@ label[for="bt_menu"]{
         padding-bottom: 10px;
         height: 330px;
         z-index: 9999;
+    }
+    .acess{
+        display: block;
     }
     .botão a{
         background-color: none;

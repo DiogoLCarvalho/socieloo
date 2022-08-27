@@ -5,18 +5,27 @@ nav{
     display: flex;
     flex-wrap: wrap;
     height: 87vh;
-    justify-content:space-around;
+    justify-content:space-between;
     align-content: center;
     align-items: center;
 }
 #main-login section{
     float: left;
 }
+.imagem{
+    background-color: #00a1ff;
+    height: 87vh;
+    width: 50vw;
+    padding-top: 50px;
+}
+.imagem img{
+    height: 100%;
+}
 #main-login aside{
     padding-top: 100px;
     float:right;
-    border-left: #00a1ff 1px solid;
-    padding-left: 19vw;
+    padding-left: 0;
+    margin-right: 15vw;
 }
 #main-login aside input:not(#lembrar){
     width: 250px;
@@ -78,14 +87,14 @@ nav{
     padding-right: 5px;
 }
 .cadastro{
-    margin-left: 40px;
+    margin-left: 0px;
     font-size: 0.81em;
 }
 .cadastro a{
     float: none;
 }
 
-@media screen and (max-width:670px){
+@media screen and (max-width:950px){
     #main-login section{
         display: none;
     }

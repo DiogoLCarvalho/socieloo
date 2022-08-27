@@ -92,21 +92,7 @@ a .card h2{
     width: 100%;
     padding: 20px 30px;
     display: flex;
-}
-.pa{
-    background-color: orangered;
-}
-.ma{
-    background-color: green;
-}
-.ci{
-    background-color: rgb(65, 1, 1);
-}
-.ed{
-    background-color: blue;
-}
-.sa{
-    background-color: red;
+    background-color: #00a1ff;
 }
 .img img{
     margin: 0 auto;

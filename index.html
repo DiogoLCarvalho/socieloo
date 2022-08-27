@@ -31,21 +31,27 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/style_home.css">
-    <link rel="stylesheet" href="src/css/style_nav_footer.css">
+    <link rel="stylesheet" href="../src/css/style_nav_footer.css">
+    <link rel="stylesheet" href="/src/css/style_card.css">
+    <link rel="stylesheet" href="../css/style_header.css">
     <script src="src/js/fonte.js"></script>
 
-    <!-- Contraste -->
-    <script type="module">
-        import contraste from "./src/js/contraste.js";
-
-        contraste.contraste("src/css/style_home.css", "../src/css/contraste.css");
-
-    </script>
-    
     <title>Inicio - Socieloo</title>
 </head>
 
 <body>
+    <div id="acessibilidade">
+        <ul id="atalhos">
+            <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+            <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+            <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
+            <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>              
+            <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
+            <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+        </ul>
+    </div>
     <nav>
         <a href="index.html" accesskey="1">
             <img src="src/imgs/Socieloo 1.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
@@ -76,12 +82,17 @@
                     <li class="sublink"><a href="">Zona Sul</a></li>
                 </ul>
             </li>
-            <li class="links">
+            <li class="links acess">
                 <a href="#" accesskey="4">Acessibilidade▾</a>
                 <ul>
-                    <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste" accesskey="c">Contraste
+                    <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+                    <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+                    <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste"
+                            accesskey="c">Contraste
                             ◉</a></li>
-                    <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste" accesskey="z">Sem
+                    <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste"
+                            accesskey="z">Sem
                             contraste ○</a></li>
                     <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
                             accesskey="b">Aumentar fonte
@@ -209,8 +220,19 @@
         <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p>
     </footer>
 
+    <!-- Contraste -->
+    <script type="module">
+        import contraste from "./src/js/contraste.js";
 
+        contraste.contraste("src/css/style_home.css", "src/css/contraste.css");
 
+    </script>
+    <script type="module">
+        import contraste from "./src/js/contraste2.js";
+
+        contraste.contraste("src/css/style_home.css", "src/css/contraste.css");
+
+    </script>
 </body>
 
 </html>

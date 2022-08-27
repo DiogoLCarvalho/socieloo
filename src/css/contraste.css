@@ -33,7 +33,13 @@ nav img{
     border: white solid 1px;
     color: #000;
 }
-
+#acessibilidade{
+    background-color: rgb(21, 21, 21);
+    color:#fff ;
+}
+#acessibilidade a{
+    color: yellow; 
+}
 .botão a:hover{
     border: #fff solid 1px;
     color: #fff;
