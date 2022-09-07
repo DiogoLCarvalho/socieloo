@@ -395,7 +395,7 @@ ul {
     }
 }
 
-@media (max-width:1025px) and (max-height:850px) {
+@media (max-width:1025px) and (max-height:879px) {
     .section__ong {
         height: 130vh;
     }
