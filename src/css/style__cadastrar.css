@@ -152,7 +152,7 @@ label[for="termos"],
 /* Três botões */
 .section__radio {
     position: absolute;
-    top: 85%;
+    top: 90%;
     margin-left: 20%;
 }
 
@@ -315,7 +315,7 @@ input[type="checkbox"] {
     }
 
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:670px){
     #cadastro {
         font-size: 0.75em;
     }
@@ -343,7 +343,7 @@ input[type="checkbox"] {
 }
 @media screen and (max-height:700px) {
     #cadastro__section{
-        height: 109.8vh;
+        height: 97vh;
     }
 }
 
