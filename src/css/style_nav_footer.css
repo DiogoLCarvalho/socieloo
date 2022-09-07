@@ -147,6 +147,8 @@ footer{
     padding: 5px 0;
     text-align: center;
     font-size: 0.6em;
+    position: relative;
+    margin-top: 40px;
 }
 
 @media screen and (max-width:859px){
