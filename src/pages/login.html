@@ -47,9 +47,9 @@
             <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
             <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
             <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
-            <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>              
+            <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>
             <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
-            <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+            <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>
         </ul>
     </div>
     <nav>
@@ -85,8 +85,10 @@
             <li class="links acess">
                 <a href="#" accesskey="4">Acessibilidade▾</a>
                 <ul>
-                    <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
-                    <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+                    <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a>
+                    </li>
+                    <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a>
+                    </li>
                     <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
                     <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste"
                             accesskey="c">Contraste
@@ -146,18 +148,13 @@
         <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p>
     </footer>
 
-    <script type="module">
-        import contraste from "../js/contraste.js";
 
-        contraste.contraste("../css/style_login.css", '../css/contraste.css');
+    <script type="module">
+        import contraste from "../js/contraste2.js";
+
+        contraste.contraste("../css/style__ong.css", '../css/contraste.css');
 
     </script>
-        <script type="module">
-            import contraste from "./src/js/contraste2.js";
-    
-            contraste.contraste("src/css/style_login.css", "src/css/contraste.css");
-    
-        </script>
 </body>
 
 </html>
