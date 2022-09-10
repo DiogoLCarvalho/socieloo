@@ -12,7 +12,6 @@ function preCarregamento() {
     for (let i = 0; i < 3; i++) {
         imgs[i] = new Image();
         imgs[i].src = "../imgs/fotosOng/fotos0" + s + ".jpg";
-        console.log(i);
         s++;
     }
 }
