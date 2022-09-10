@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon">
+    <meta name="description"
+        content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda.">
+    <meta name="keywords"
+        content="Projetos, FATEC, acessibilidade, Ong, ajuda, instituições, doações, voluntários, desigualdades sociais, políticas públicas, socieloo, cpdev">
+    <meta name="author"
+        content="Aryel Anne, Ademir Martins, Bianca Jesus, Diogo Lima, Fernanda Sena, Leonardo Cajé (Cross-Plataform Dev)">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="robots" content="index,follow">
+    <meta itemprop="image"
+        content="https://user-images.githubusercontent.com/84794798/169667225-9db47581-a814-4c78-9dd2-10e44bc9133b.png">
+
+
+    <!-- Meta dados facebook -->
+    <meta property="og:url" content="diogolcarvalho.github.io/socieloo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Socieloo - Construindo elos sociais" />
+    <meta property="og:site_name" content="Socieloo" />
+    <meta property="og:description"
+        content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda." />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/DiogoLCarvalho/socieloo/main/src/imgs/Socieloo-logo.png" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_editar_ong.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Editar ONG</title>
+</head>
+
+<body>
+    <div id="acessibilidade">
+        <ul id="atalhos">
+            <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+            <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+            <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
+            <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>
+            <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
+            <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>
+        </ul>
+    </div>
+    <nav>
+        <a href="../../index.html" accesskey="1">
+            <img src="../imgs/Socieloo 1.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
+        </a>
+        <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <!--menu responsivo-->
+        <ul id="menu">
+            <li class="links">
+                <a href="#" accesskey="2">Segmentos▾</a>
+                <ul>
+                    <li class="sublink"><a href="">Cidadania</a></li>
+                    <li class="sublink"><a href="">Cultura e Esportes</a></li>
+                    <li class="sublink"><a href="">Educação</a></li>
+                    <li class="sublink"><a href="">Gênero e Diversidade</a></li>
+                    <li class="sublink"><a href="">Meio Ambiente</a></li>
+                    <li class="sublink"><a href="">Proteção Animal</a></li>
+                    <li class="sublink"><a href="">Saúde</a></li>
+                </ul>
+            </li>
+            <li class="links">
+                <a href="#" accesskey="3">Região▾</a>
+                <ul>
+                    <li class="sublink"><a href="">Zona Leste</a></li>
+                    <li class="sublink"><a href="">Zona Norte</a></li>
+                    <li class="sublink"><a href="">Centro</a></li>
+                    <li class="sublink"><a href="">Zona Oeste</a></li>
+                    <li class="sublink"><a href="">Zona Sul</a></li>
+                </ul>
+            </li>
+            <li class="links acess">
+                <a href="#" accesskey="4">Acessibilidade▾</a>
+                <ul>
+                    <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a>
+                    </li>
+                    <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a>
+                    </li>
+                    <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste"
+                            accesskey="c">Contraste
+                            ◉</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste"
+                            accesskey="z">Sem
+                            contraste ○</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
+                            accesskey="b">Aumentar fonte
+                            +</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte"
+                            accesskey="s">Diminuir fonte
+                            -</a></li>
+                    <li class="sublink"><a href="src/pages/acessibilidade.html"
+                            title="Manual de acessibilidade">Acessibilidade</a></li>
+                </ul>
+            </li>
+            <li class="links botão"><a href="cadastro.html" accesskey="5">Cadastre sua Ong</a></li>
+        </ul>
+    </nav>
+
+    <main id="edit">
+        <section class="edit__conteiner">
+
+            <aside class="edit__options">
+                <div class="options__photos">
+                    <img src="../imgs/fotosOng/fotos01.jpg" alt="foto de perfil escolhida pela ong">
+                    <h1>Adote Sempre Cabe Mais Um</h1>
+                </div>
+
+                <ul class="options__itens">
+                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> Editar perfil</a></li>
+                    <li><a href="#" class="options__item"><i class='bx bxs-lock-alt'></i> Alterar senha</a></li>
+                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item3</a></li>
+                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item4</a></li>
+                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item5</a></li>
+                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item6</a></li>
+                </ul>
+
+            </aside>
+
+            <section class="edit__content">
+                <h2>Editar perfil</h2>
+
+                <form action="#" class="content__form">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" value="Adote Sempre Cabe Mais Um">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="noobmaster69@hotmail.com">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" value="+55 (11) 98765-4321">
+
+                    <label for="endereço">Endereço</label>
+                    <input type="text" id="endereço" name="endereço" value="R. das Alamandas - Jardim Estancia Brasil">
+
+                    <label for="Sobre">Sobre</label>
+                    <textarea name="Sobre" id="Sobre" cols="10" rows="10"></textarea>
+
+                    <div class="form__button">
+                        <button>Salvar edição</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script type="module">
+        import contraste from "../js/contraste2.js";
+
+        contraste.contraste("../css/style__ong.css", '../css/contraste.css');
+    </script>
+</body>
+
+</html>

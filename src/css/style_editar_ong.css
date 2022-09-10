@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  ----------------------- Estrutura da página --------------------------- */
+#edit {
+    width: 100%;
+    height: calc(100% - 91px);
+    margin: 0px auto;
+    display: flex;
+    place-content: center;
+    background: #00a1ff;
+}
+
+.edit__conteiner {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    place-content: center;
+    background: #00a1ff;
+}
+
+/* Divisão de largura */
+.edit__options {
+    background: #fff;
+    width: 25%;
+    height: auto;
+    font-size: 1rem;
+    text-align: center;
+    border-right: 2px solid #00a1ff;
+}
+
+.edit__content {
+    background: #fff;
+    width: 70%;
+    height: auto;
+    font-size: 1rem;
+}
+
+/*  ----------------------- aside --------------------------- */
+.options__photos{
+    display: block;
+}
+
+.options__photos img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.options__itens li{
+    position: relative;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.252);
+    border-top: 1px solid rgba(255, 255, 255, 0.085);
+}
+
+.options__itens li > a{
+    font-size: 20px;
+}
+
+.options__itens li:hover:before,.options__itens li:first-child::before{
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    width: 5px;
+    bottom: 0px;
+    background-color: #00a1ff;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.options__item{
+    text-decoration: none;
+    color: black;
+}
+
+.options__item:hover{
+    color: rgba(23, 23, 23, 0.92);
+}
+/*  ----------------------- main content --------------------------- */
+.edit__content{
+    padding: 30px 30px 13px;
+}
+
+.edit__content h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.content__form label{
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content__form input, .content__form textarea{
+    width: 100%;
+    padding: 14px;
+    border-radius: 5px;
+    border: .4px solid black;
+    font-size: 16px;
+}
+
+.content__form input + label {
+    margin-top: 25px;
+}
+
+#Sobre{
+    resize: none;
+}
+
+/* Colocar o botão no final */
+.form__button{
+    width: 100%;
+    text-align: center;
+}
+
+.content__form button{
+    padding: 15px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #00a1ff;
+    border: #00a1ff solid 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.content__form button:hover{
+    transform: scale(1.03);
+    background-color: #069df5db;
+}
+
