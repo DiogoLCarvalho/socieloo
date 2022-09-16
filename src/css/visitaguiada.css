@@ -1,0 +1,135 @@
+main{
+    background-image: url(../imgs/icons.svg);
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+}
+.titulo{
+    text-align: center;
+}
+.titulo p{
+    font-size: 0.80em;
+    font-weight: 600;
+}
+.titulo h1{
+    color: #00a1ff;
+    font-size: 1.8rem;
+    line-height:  1.9rem;
+    margin-bottom: 10px;
+}
+
+.form{
+    margin-top: 5vh;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 1px 2px 5px #00000070;
+}
+.form label::before{
+    content: "* ";
+    color: #00a1ff;
+}
+.form label{
+    font-size: 0.80em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form input, select{
+    width: 300px;
+    height: 35px;
+    margin: 5px 0;
+    font-size: 0.80em;
+    padding: 5px;
+    border-radius: 3px;
+    border:rgb(49, 49, 49) solid 1px;
+}
+.options__submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #00a1ff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.options__submit:hover {
+    background: rgba(0, 162, 255, 0.856);
+}
+/* Segunda página */
+.horarios{
+    margin-top: 5vh;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 1px 2px 5px #00000070;
+    text-align: center;
+    width: 40vw;
+    height: fit-content;
+}
+.hdidisponiveis{
+    display: flex;
+}
+.hdidisponiveis .checks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button{
+    display: none;
+}
+.button-label {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    cursor: pointer;
+    color: #000;
+    border-radius: 0.25em;
+    background: none;
+    border: 2px solid #000;
+    transition: 0.3s;
+    user-select: none;
+}
+.button:checked + .button-label{
+    border: 2px solid rgba(0, 162, 255, 0.856);
+    color: rgba(0, 162, 255, 0.856);  
+    background-color: rgba(207, 237, 255, 0.856);
+}
+.segundo{
+    width: 86%;
+}
+/* Terceira página */
+.erro{
+    margin-top: 5vh;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 1px 2px 5px #00000070;
+    text-align: center;
+    width: 40vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.tituloo{
+    text-align: center;
+}
+.tituloo p:first-child{
+    font-size: 0.80em;
+    font-weight: 600;
+}
+.tituloo p{
+    font-size: 0.80em;
+    font-weight: normal;
+}
+.tituloo h1{
+    color: #00a1ff;
+    font-size: 1.8rem;
+    line-height:  1.9rem;
+    margin-bottom: 10px;
+}
+.terceiro{
+    width: 70%;
+}
