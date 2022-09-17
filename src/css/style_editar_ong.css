@@ -13,14 +13,18 @@
     display: flex;
     place-content: center;
     background: #00a1ff;
+    background-image: url('../imgs/iconswhite.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .edit__conteiner {
-    width: 65%;
-    height: 100%;
+    width: 75%;
+    height: calc(100vh - 91px);
     display: flex;
     place-content: center;
-    background: #00a1ff;
+    background: transparent;
 }
 
 /* Divisão de largura */
@@ -83,7 +87,7 @@
 }
 /*  ----------------------- main content --------------------------- */
 .edit__content{
-    padding: 30px 30px 13px;
+    padding: 5px 30px 3px;
 }
 
 .edit__content h2{
@@ -111,7 +115,7 @@
 }
 
 #Sobre{
-    resize: none;
+    resize: vertical;
 }
 
 /* Colocar o botão no final */

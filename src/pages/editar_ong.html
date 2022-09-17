@@ -126,7 +126,7 @@
                 <ul class="options__itens">
                     <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> Editar perfil</a></li>
                     <li><a href="#" class="options__item"><i class='bx bxs-lock-alt'></i> Alterar senha</a></li>
-                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item3</a></li>
+                    <li><a href="#" class="options__item"><i class='bx bxs-message-square-x'></i> Deletar conta</a></li>
                     <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item4</a></li>
                     <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item5</a></li>
                     <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item6</a></li>
@@ -177,6 +177,30 @@
         import contraste from "../js/contraste2.js";
 
         contraste.contraste("../css/style__ong.css", '../css/contraste.css');
+    </script>
+
+    <!-- Resize -->
+    <script>
+        let textarea = document.querySelector("#Sobre");
+        let container_textarea = document.querySelector(".edit__conteiner").scrollHeight;
+
+        let body = document.querySelector("body").scrollHeight;
+
+        textarea.addEventListener('input', () => {
+            let form = document.querySelector(".content__form").scrollHeight;
+
+            // console.log(textarea.scrollHeight);
+            textarea.style.height = 'auto';
+            textarea.style.height = `${textarea.scrollHeight}px`
+            // console.log(container_textarea.scrollHeight);
+
+            console.log(form);
+
+            form > container_textarea ? console.log("é maior") : console.log("é menor");
+
+            // container_textarea > body ? console.log("é maior") : console.log("é menor");
+
+        });
     </script>
 </body>
 
