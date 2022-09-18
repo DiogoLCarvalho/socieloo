@@ -34,8 +34,8 @@
 
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style_header.css">
-    <link rel="stylesheet" href="../css/style_editar_ong.css">
+    <link rel="stylesheet" href="../css/style_nav_footer.css">
+    <link rel="stylesheet" href="../css/style_favoritos_usuario.css">
 
     <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -114,50 +114,71 @@
         </ul>
     </nav>
 
-    <main id="edit">
-        <section class="edit__conteiner">
+    <main id="main__fav">
+        <section>
+            <div class="fav__text">
+                <h1>Favoritos</h1>
+                <p>Todas as suas ONGs e projetos favoritos </p>
+            </div>
 
-            <aside class="edit__options">
-                <div class="options__photos">
-                    <img src="../imgs/fotosOng/fotos01.jpg" alt="foto de perfil escolhida pela ong">
-                    <h1>Adote Sempre Cabe Mais Um</h1>
+            <div class="fav__options">
+
+                <div class="options__search">
+                    <input type="search" placeholder="Pesquisar">
+                    <span class="search__icon__container">
+                        <img src="../assets/search.svg" alt="icone de pesquisa" class="search__icon">
+                    </span>
                 </div>
 
-                <ul class="options__itens">
-                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> Editar perfil</a></li>
-                    <li><a href="#" class="options__item"><i class='bx bxs-lock-alt'></i> Alterar senha</a></li>
-                    <li><a href="#" class="options__item"><i class='bx bxs-message-square-x'></i> Deletar conta</a></li>
-                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item4</a></li>
-                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item5</a></li>
-                    <li><a href="#" class="options__item"><i class='bx bx-pencil'></i> item6</a></li>
-                </ul>
 
-            </aside>
+                <div class="options__select">
+                    <select>
+                        <optgroup label="Categorias">
+                            <option value="Cidadania">Cidadania</option>
+                            <option value="Cultura e Esportes">Cultura e Esportes</option>
+                            <option value="Educação">Educação</option>
+                            <option value="Gênero e Diversidade">Gênero e Diversidade</option>
+                            <option value="Meio Ambiente">Meio Ambiente</option>
+                            <option value="Proteção Animal">Proteção Animal</option>
+                            <option value="Saúde">Saúde</option>
+                        </optgroup>
+                        <option value="#" disabled selected>Todos</option>
+                    </select>
+                    <select>
+                        <optgroup label="Regiões">
+                            <option value="Norte">Norte</option>
+                            <option value="Sul">Sul</option>
+                            <option value="Oeste">Oeste</option>
+                            <option value="Leste">Leste</option>
+                            <option value="Centro">Centro</option>
+                        </optgroup>
+                        <option value="#" disabled selected>Qualquer região</option>
+                    </select>
+                </div>
 
-            <section class="edit__content">
-                <h2>Editar perfil</h2>
 
-                <form action="#" class="content__form">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" value="Adote Sempre Cabe Mais Um">
+            </div>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" value="noobmaster69@hotmail.com">
+        </section>
 
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" value="+55 (11) 98765-4321">
+        <section class="fav__cards">
+            <div class="cards__title">
+                <h2>Meio Ambiente </h2>
+            </div>
 
-                    <label for="endereço">Endereço</label>
-                    <input type="text" id="endereço" name="endereço" value="R. das Alamandas - Jardim Estancia Brasil">
+            <div class="card">
+                <!-- remove icon -->
+                <div class="card__remove">
+                    <img src="../assets/remove-icon.svg" alt="ícone de remoção do projeto">
+                </div>
 
-                    <label for="Sobre">Sobre</label>
-                    <textarea name="Sobre" id="Sobre"></textarea>
-
-                    <div class="form__button">
-                        <button>Salvar edição</button>
+                <a href="../pages/ong.html">
+                    <div class="img pa">
+                        <img src="../imgs/icon-park-outline_tree.png">
                     </div>
-                </form>
-            </section>
+                    <h2>Adote Sempre Cabe mais Um</h2>
+                </a>
+            </div>
         </section>
     </main>
 
@@ -173,37 +194,13 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
+
     <script type="module">
         import contraste from "../js/contraste2.js";
 
         contraste.contraste("../css/style__ong.css", '../css/contraste.css');
     </script>
 
-    <!-- Resize -->
-    <!-- <script>
-        let textarea = document.querySelector("#Sobre");
-        let container_textarea = document.querySelector(".edit__conteiner");
-        const container_height = container_textarea.scrollHeight;
-
-        let body = document.querySelector("body").scrollHeight;
-
-        textarea.addEventListener('keyup', () => {
-            let form = document.querySelector(".content__form").scrollHeight;
-
-            textarea.style.height = `${textarea.scrollHeight}px`
-
-
-            console.log(textarea.scrollHeight);
-            console.log(form);
-
-            if (form > container_height) {
-                container_textarea.style.height = 'calc(100% - 91px)';
-            } else {
-                container_textarea.style.height = 'calc(100vh - 91px)';
-            }
-        });
-       
-    </script> -->
 </body>
 
 </html>
