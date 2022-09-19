@@ -37,7 +37,10 @@
     <link rel="stylesheet" href="../css/style_header.css">
     <link rel="stylesheet" href="../css/style_nav_footer.css">
     <link rel="stylesheet" href="../css/trabalhovoluntario.css">
+
+    <!-- JS -->
     <script src="../src/js/fonte.js"></script>
+    <script src="../js/trabalhovoluntario.js"></script>
 
     <title>Formulário de trabalho voluntário - Socieloo</title>
 </head>
@@ -113,7 +116,7 @@
         <section>
             <h1>Formulário de trabalho voluntário</h1>
             <div class="padrao">
-                <form action="">
+                <form action="" id="formpadrao">
                     <h3>*Padrão</h3>
                     <label for="name">Nome:</label><br>
                     <input type="text" name="name" id="name" required disabled><br>
@@ -133,21 +136,33 @@
                 </form>
             </div>
             <div class="add">
+                <form id="adicionar" action="javascript:void(0)">
                 <div class="editar">
-                    <input type="text" placeholder="Adicionar Titulo">
-                    <textarea name="" id="exemplo" placeholder="Caixa de Texto" disabled></textarea>
+                    <input type="text" placeholder="Adicionar Titulo" id="title">
+                    <div class="exemplos">
+                        <div id="para_exemplo">
+                            <textarea name="" id="para_exemplo" placeholder="Caixa de Texto" hidden disabled></textarea>
+                        </div>
+                        <div id="multi_exemplo">
+                            <textarea name="" id="para_exemplo" placeholder="multi_exemplo" hidden disabled></textarea>
+                        </div>
+                        <div id="caixas_exemplo">
+                            <textarea name="" id="para_exemplo" placeholder="caixas_exemplo" hidden disabled></textarea>
+                        </div>
+                    </div>
                     <div class="btns">
-                        <button class="new">Adicionar novo</button>
+                        <button class="new" onclick="add()">Adicionar novo</button>
                         <button type="submit" class="save">Salvar tudo</button>
                     </div>
                 </div>
                 <div class="selecionar">
-                    <select name="select" id="tipo">
-                        <option value="Parágrafo">Parágrafo</option>
-                        <option value="Múltipla seleção">Múltipla seleção</option>
-                        <option value="Caixas de seleção">Caixas de seleção</option>
-                    </select><br>
+                        <select name="select" id="tipo">
+                            <option value="Parágrafo">Parágrafo</option>
+                            <option value="Múltipla seleção">Múltipla seleção</option>
+                            <option value="Caixas de seleção">Caixas de seleção</option>
+                        </select><br>
                 </div>
+                </form>
             </div>
         </section>
     </main>

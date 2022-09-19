@@ -50,11 +50,14 @@ form input, select{
     background-color: none;
     border:rgb(49, 49, 49) solid 1px;
 }
+#adicionar{
+    display: flex;
+}
 .add{
     margin-top: 30px;
     display: flex;
     align-items: baseline;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .editar{
     display: flex;
