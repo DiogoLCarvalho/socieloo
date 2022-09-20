@@ -31,6 +31,7 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/fonte.js"></script>
 
 
     <!-- CSS -->
@@ -132,7 +133,7 @@
 
 
                 <div class="options__select">
-                    <select>
+                    <select name="categoria" id="categoria">
                         <optgroup label="Categorias">
                             <option value="Cidadania">Cidadania</option>
                             <option value="Cultura e Esportes">Cultura e Esportes</option>
@@ -144,7 +145,7 @@
                         </optgroup>
                         <option value="#" disabled selected>Todos</option>
                     </select>
-                    <select>
+                    <select name="região">
                         <optgroup label="Regiões">
                             <option value="Norte">Norte</option>
                             <option value="Sul">Sul</option>
@@ -162,7 +163,7 @@
         </section>
 
         <!-- Seção 1 -->
-        <section class="fav__cards">
+        <section class="fav__cards" id="conteudo">
             <div class="cards__title">
                 <h2>Meio Ambiente</h2>
             </div>
@@ -285,7 +286,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="rodape">
         <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p>
     </footer>
 

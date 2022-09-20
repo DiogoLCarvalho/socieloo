@@ -8,7 +8,7 @@
 /*  ----------------------- Estrutura da página --------------------------- */
 #edit {
     width: 100%;
-    height: calc(100% - 91px);
+    height: calc(100vh - 91px);
     margin: 0px auto;
     display: flex;
     place-content: center;
@@ -21,7 +21,7 @@
 
 .edit__conteiner {
     width: 75%;
-    height: calc(100vh - 91px);
+    height: 100%;
     display: flex;
     place-content: center;
     background: transparent;

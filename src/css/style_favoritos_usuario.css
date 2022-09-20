@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 /* Texto das páginas */
@@ -160,4 +161,36 @@
 
 .card__remove:hover img {
     transform: rotate(360deg);
+}
+
+@media screen and (max-width:500px){
+    .options__select{
+        display: inline-block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .fav__options select+select {
+        margin: 10px 0px 0px;
+    }
+    .item-custom {
+        grid-column: span 1;
+    }
+    .fav__options select {
+        font-size: 12px;
+        height: auto;
+        padding: 5px;
+    }
+    .options__search{
+        max-width: 290px;
+        height: 40px;
+        
+    }
+    .fav__options .options__search input{
+        font-size: 12px;
+    }
+        
+    .fav__options .options__search .search__icon__container .search__icon{
+        width: 15px;
+        height: 15px;
+    }
 }
