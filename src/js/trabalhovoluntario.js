@@ -38,7 +38,7 @@ function saveradio(){
     document.getElementById("multi_exemplo").hidden = true;
 }
 function addbox(){
-    let legenda = document.getElementById("legend").value;
+    let legenda = document.getElementById("legendd").value;
     let form = document.getElementById("formpadrao");
     let div = document.createElement('div');
     let legend = document.createElement('p');
