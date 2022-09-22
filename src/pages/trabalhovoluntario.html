@@ -116,7 +116,7 @@
         <section>
             <h1>Formulário de trabalho voluntário</h1>
             <div class="padrao">
-                <form action="" id="formpadrao">
+                <form action="javascript:void(0)" id="formpadrao">
                     <h3>*Padrão</h3>
                     <label for="name">Nome:</label><br>
                     <input type="text" name="name" id="name" required disabled><br>
@@ -135,35 +135,38 @@
                     </select><br>
                 </form>
             </div>
+            <div class="exemplos">
+                <div id="multi_exemplo" hidden>
+                    <form action="javascript:void(0)">
+                    <div class="inputs"><input type="radio"><input type="text" placeholder="Legenda" id="legend"></div>
+                    <button class="new" onclick="addradio()">Adicionar opção</button>
+                    <button class="save" onclick="saveradio()">Salvar opções</button>
+                    </form>
+                </div>
+                <div id="caixas_exemplo" hidden>
+                    <div class="inputs"><input type="checkbox"><input type="text" placeholder="Legenda" id="legend"></div>
+                    <button class="new" onclick="addbox()">Adicionar opção</button>
+                    <button class="save" onclick="savebox()">Salvar opções</button>
+                </div>
+            </div>
             <div class="add">
                 <form id="adicionar" action="javascript:void(0)">
                 <div class="editar">
                     <input type="text" placeholder="Adicionar Titulo" id="title">
-                    <div class="exemplos">
-                        <div id="para_exemplo">
-                            <textarea name="" id="para_exemplo" placeholder="Caixa de Texto" hidden disabled></textarea>
-                        </div>
-                        <div id="multi_exemplo">
-                            <textarea name="" id="para_exemplo" placeholder="multi_exemplo" hidden disabled></textarea>
-                        </div>
-                        <div id="caixas_exemplo">
-                            <textarea name="" id="para_exemplo" placeholder="caixas_exemplo" hidden disabled></textarea>
-                        </div>
-                    </div>
                     <div class="btns">
                         <button class="new" onclick="add()">Adicionar novo</button>
                         <button type="submit" class="save">Salvar tudo</button>
                     </div>
                 </div>
                 <div class="selecionar">
-                        <select name="select" id="tipo">
-                            <option value="Parágrafo">Parágrafo</option>
-                            <option value="Múltipla seleção">Múltipla seleção</option>
-                            <option value="Caixas de seleção">Caixas de seleção</option>
-                        </select><br>
+                    <select name="select" id="tipo">
+                        <option value="Parágrafo">Parágrafo</option>
+                        <option value="Múltipla seleção">Múltipla seleção</option>
+                        <option value="Caixas de seleção">Caixas de seleção</option>
+                    </select><br>
                 </div>
-                </form>
-            </div>
+            </form>
+        </div>
         </section>
     </main>
 </body>

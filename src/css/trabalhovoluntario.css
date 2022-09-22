@@ -49,7 +49,27 @@ form input, select{
     border-radius: 3px;
     background-color: none;
     border:rgb(49, 49, 49) solid 1px;
+
 }
+form textarea{
+    border: 1px solid #484848;
+    width: 300px;
+    height: 100px;
+    padding-left: 5px;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+
+}
+.radio{
+    display: flex;
+}
+.radio input{
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+
 #adicionar{
     display: flex;
 }
@@ -74,6 +94,33 @@ form input, select{
     font-size: 1.4rem;
     padding-left: 5px;
     margin-bottom: 10px;
+    
+}
+.inputs{
+    display: flex;
+    align-items: center;
+}
+.exemplos input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #484848;
+    color: #484848;
+    background-color: #ebebeb;
+    height: 25px;
+    width: 200px;
+    font-size: 1rem;
+    padding-left: 5px;
+    margin: 10px 5px;
+}
+.exemplos input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+.exemplos input:focus{
+    border: none;
+    background-color: #e3e3e3;
+    border-bottom: 1px solid #2f2f2f;
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 .editar input:focus{
     border: none;
