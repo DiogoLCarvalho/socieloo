@@ -186,3 +186,17 @@ option:hover{
     transition: 0.7s;
 
 }
+@media screen and (max-width:960px){
+    #adicionar {
+        display: flex;
+        flex-direction: column;
+    }
+    .padrao{
+        padding: 20px 5vw;
+    }
+}
+@media screen and (max-width:550px){
+    section{
+        width: 100vw;
+    }
+}
