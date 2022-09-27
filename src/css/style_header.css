@@ -240,3 +240,64 @@ footer{
         font-size: 1rem;
     }
 }
+
+/* MUDAR CADASTRO */
+.cadastros{
+    bottom: 0;
+    right:0;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.cadastros .link{
+    box-shadow: 0px 0px 1.2px 0px #aeaeae; 
+    background-color: #fdfdfd;
+    padding: 5px 10px;
+    transition: 0.7s;
+}
+.cadastros .link:hover{
+    background-color: #a5e2ff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.cadastros .link:hover a{
+    color: #00a1ff;
+    transition: 0.7s;
+}
+.cadastros .ativado:hover{
+    box-shadow: 0px 0px 1.2px 0px #aeaeae; 
+    background-color: #00a1ff;
+}
+.cadastros .ativado:hover a{
+    text-decoration: none;
+    color: #fff;
+}
+.cadastros .link i{
+    margin-right: 5px;
+}
+.cadastros .link a{
+    text-decoration: none;
+    color: #222222;
+}
+.cadastros .ativado{
+    box-shadow: 0px 0px 1.2px 0px #aeaeae; 
+    background-color: #00a1ff;
+}
+.cadastros .ativado a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width:890px) {
+    .cadastros{
+        bottom: 50px;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        left: 92vw;
+        transform: rotate(270deg);
+    }
+}

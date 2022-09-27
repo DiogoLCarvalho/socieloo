@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon">
+    <meta name="description" content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda.">
+    <meta name="keywords" content="Projetos, FATEC, acessibilidade, Ong, ajuda, instituições, doações, voluntários, desigualdades sociais, políticas públicas, socieloo, cpdev">
+    <meta name="author"
+        content="Aryel Anne, Ademir Martins, Bianca Jesus, Diogo Lima, Fernanda Sena, Leonardo Cajé (Cross-Plataform Dev)">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="robots" content="index,follow">
+    <meta itemprop="image" content="https://user-images.githubusercontent.com/84794798/169667225-9db47581-a814-4c78-9dd2-10e44bc9133b.png">
+
+    <!-- Meta dados facebook -->
+    <meta property="og:url" content="diogolcarvalho.github.io/socieloo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Socieloo - Construindo elos sociais" />
+    <meta property="og:site_name" content="Socieloo" />
+    <meta property="og:description" content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda." />
+    <meta property="og:image"content="https://raw.githubusercontent.com/DiogoLCarvalho/socieloo/main/src/imgs/Socieloo-logo.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/acessibilidade.css">
+    <link rel="stylesheet" href="../css/style_mod.css">
+    <link rel="stylesheet" href="../js/mod_jquery.js">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_nav_footer.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="../js/fonte.js"></script>
+
+    <title>Cadastro Moderador - Socieloo</title>
+</head>
+<body>
+    <header class="main_header container">
+    </header>
+    <div id="acessibilidade">
+        <ul id="atalhos">
+            <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+            <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+            <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
+            <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>              
+            <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
+            <li id="pgacess"><a href="src/pages/acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+        </ul>
+    </div>
+    <nav>
+        <a href="../../index.html" accesskey="1" id="home-acess">
+            <img src="../imgs/Socieloo-logo.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
+        </a>
+        <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <!--menu responsivo-->
+        <ul id="menu">
+            <li class="links acess">
+                <a href="#" accesskey="4">Acessibilidade▾</a>
+                <ul>
+                    <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a>
+                    </li>
+                    <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a>
+                    </li>
+                    <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste"
+                            accesskey="c">Contraste
+                            ◉</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste"
+                            accesskey="z">Sem
+                            contraste ○</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
+                            accesskey="b">Aumentar fonte
+                            +</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte"
+                            accesskey="s">Diminuir fonte
+                            -</a></li>
+                    <li class="sublink"><a href="src/pages/acessibilidade.html"
+                            title="Manual de acessibilidade">Acessibilidade</a></li>
+                </ul>
+            </li>
+            <li class="links botão"><a href="login.html" accesskey="5">Fazer login</a></li>
+        </ul>
+    </nav>
+
+    <main class="main_content container">
+        <section class="section-seu-codigo container">
+            <div class="content">
+                <div id="box-artigo" class="box-artigo">
+                    <!--Inícia Formulário-->
+                    <div class="container_form">
+                        <h1>Cadastro do moderador</h1>
+                        <form class="form" action="#" method="post">
+                            <div class="form_grupo">
+                                <label for="nome" class="form_label">Nome</label>
+                                <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+                            </div>
+
+                            <div class="form_grupo">
+                                <label for="e-mail" class="form_label">Email</label>
+                                <input type="email" name="email" class="form_input" id="email"
+                                    placeholder="seuemail@email.com" required>
+                            </div>
+
+                            <div class="form_grupo">
+                                <label for="datanascimento" class="form_label">Data de Nascimento</label>
+                                <input type="date" name="datanascimento" class="form_input" id="datanascimento"
+                                    placeholder="Data de Nascimento" required>
+                            </div>
+                            <div class="form_grupo">
+                                <span class="legenda">Permitir acesso</span>
+                                <div class="check-btn">
+                                    <input type="checkbox" class="form_new_input" id="html5" name="aprender"
+                                        value="html5">
+                                    <label for="html5" class="form_label check_label"> <span
+                                            class="check_new_btn"></span> Exclusão de Cadastros</label>
+                                </div>
+                                <div class="check-btn">
+                                    <input type="checkbox" class="form_new_input" id="css3" name="aprender"
+                                        value="css3">
+                                    <label for="css3" class="form_label check_label"><span class="check_new_btn"></span>
+                                        Edição de Página</label>
+                                </div>
+                                <div class="check-btn">
+                                    <input type="checkbox" class="form_new_input" id="jquery" name="aprender"
+                                        value="jquery">
+                                    <label for="jquery" class="form_label check_label"><span
+                                            class="check_new_btn"></span> Exclusão de comentários</label>
+                                </div>
+                                <div class="check-btn">
+                                    <input type="checkbox" class="form_new_input" id="wordpress" name="aprender"
+                                        value="wordpress">
+                                    <label for="wordpress" class="form_label check_label"><span
+                                            class="check_new_btn"></span> Exclusão de mídia</label>
+                                </div>
+                                <div class="form_grupo">
+                                    <span class="legenda form_label">Confirmação de Senha</span>
+                                    <div class="inputsenha">
+                                        <input type="password" class="form_input" placeholder="Senha" id="password" required>
+                                        <input type="password" class="form_input" placeholder="Confirme Senha" id="confirm_password"required>
+                                        <button type="submit" class="confirm_btn">Confirmar</button>
+                                    </div>
+                                </div>
+                                <div class="form_message">
+                                    <label for="message" class="form_message_label"> Digite aqui sua sua
+                                        mensagem:</label>
+                                    <textarea name="mensagem" id="message" cols="30" rows="3"class="form_input message_input" required></textarea>
+                                </div>
+                                <div class="options__checkbox">
+                                    <input type="checkbox" name="termos" id="termos">
+                                    <label class="check_label" for="termos">Eu concordo com os <a href="#">termos e condições</a></label>
+                                </div>
+                                <div class="submit">
+                                    <input type="hidden" name="acao" value="enviar">
+                                    <button type="submit" name="Submit" class="submit_btn">Cadastrar</button>
+                                </div>
+                        </form>
+                    </div>
+                    <!--container_form-->
+                    <!--Finaliza Formulário-->
+                </div>
+                <!--Box Artigo-->
+                <div class="clear"></div>
+            </div>
+        </section>
+        <!--FECHA BOX HTML-->
+    </main>
+    <div class="cadastros">
+        <div class="link"><a href=""><i class="fa-solid fa-user"></i> Usuário</a><br></div>
+        <div class="link"><a href="../pages/cadastro.html"><i class="fa-solid fa-handshake-angle"></i>Ong's</a><br></div>
+        <div class="link ativado"><a href="javascript:void(0)"><i class="fa-solid fa-gears"></i>Moderador</a><br></div>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script type="module">
+        import contraste from "../js/contraste2.js";
+
+        contraste.contraste("../css/style__ong.css", '../css/contraste.css');
+
+    </script>
+
+    <footer>
+        <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p>
+    </footer>
+
+</body>
+
+</html>
