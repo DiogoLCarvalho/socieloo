@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    border: none;
+}
+input, label {
+    display: block;
+    width: 100%;
+}
+input:focus, label:focus {
+    outline: none;
+}
+a{
+    color: 00a1ff;
+}
+body{
+    padding-top: 5vh;
+    background-image: url(../imgs/icons.svg);
+    background-size: cover;
+    background-position-y: -150px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*form*/
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5fbff6;
+    border-radius: 10px;
+    padding: 25px;
+}
+#main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*espaço entre os checkbox*/
+}
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+.spacing{
+    margin-right: 2.5%;
+}
+label{
+    font-weight: bold;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+input{
+    border-bottom: 2px solid #000;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 30px;
+}
+input:focus{
+    border-color: #5fbff6;
+}
+input[type="submit"]{
+    background-color: black;
+    color: #5fbff6;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+#termos{
+    margin-right: 5px;
+}
+#termos, #termos-label{
+    display: inline-block;
+    width: auto;
+}
+
+/*validação*/
+.error-validation{
+    color: red;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+.template{
+    display: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="../css/rec_senha.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <h1>Recuperação de senha</h1>
+        <form id="register-form">
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <h2>Eviaremos o código de acesso para seu email de cadastro</h2>
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Enviar">
+            </div>
+            <div class="full-box">
+                <label for="password">Codigo de acesso</label>
+                <input type="password" name="password" id="password" placeholder="Digite seu código de acesso">
+            </div>
+            <div class="options__checkbox">
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos" id="termos-label">Eu concordo com os <a href="#">termos e condições</a></label>
+            </div>
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Acessar conta">
+            </div>
+            <p class="error.validation template"></p>
+        </form>
+    </div>
+</body>
+
+</html>

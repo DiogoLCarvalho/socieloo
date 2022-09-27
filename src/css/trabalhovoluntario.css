@@ -193,10 +193,12 @@ option:hover{
     }
     .padrao{
         padding: 20px 5vw;
+        
     }
 }
 @media screen and (max-width:550px){
     section{
         width: 100vw;
+
     }
 }
