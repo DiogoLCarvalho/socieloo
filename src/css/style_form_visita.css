@@ -1,0 +1,187 @@
+main{
+    background-color: #00a1ff;
+    background-image: url(../imgs/iconswhite.svg);
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+section{
+    width: 70vw;
+    background-color: #fff;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.561);
+    flex-direction: column;
+}
+section h1{
+    margin-top: 30px;
+}
+.padrao{
+    margin-top: 20px;
+    background-color: rgb(221, 221, 221);
+    padding: 20px;
+    border-radius: 5px;
+    padding-right: 30vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.139) inset;
+}
+form{
+    text-align: left;
+}
+form label::before{
+    content: "* ";
+    color: #00a1ff;
+}
+form label{
+    font-size: 0.80em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input, select{
+    width: 300px;
+    height: 35px;
+    margin: 5px 0;
+    font-size: 0.80em;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: none;
+    border:rgb(49, 49, 49) solid 1px;
+
+}
+form textarea{
+    border: 1px solid #484848;
+    width: 300px;
+    height: 100px;
+    padding-left: 5px;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+
+}
+.radio{
+    display: flex;
+}
+.radio input{
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+#adicionar{
+    display: flex;
+}
+.add{
+    margin-top: 30px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 100px;
+}
+.editar{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.editar input{
+    border: none;
+    border-bottom: 1px solid #484848;
+    color: #484848;
+    background-color: #ebebeb;
+    height: 30px;
+    width: 300px;
+    font-size: 1.4rem;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    
+}
+.inputs{
+    display: flex;
+    align-items: center;
+}
+.exemplos input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #484848;
+    color: #484848;
+    background-color: #ebebeb;
+    height: 25px;
+    width: 200px;
+    font-size: 1rem;
+    padding-left: 5px;
+    margin: 10px 5px;
+}
+.exemplos input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+.exemplos input:focus{
+    border: none;
+    background-color: #e3e3e3;
+    border-bottom: 1px solid #2f2f2f;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.editar input:focus{
+    border: none;
+    background-color: #e3e3e3;
+    border-bottom: 1px solid #2f2f2f;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.editar textarea{
+    border: 1px solid #484848;
+    width: 300px;
+    height: 100px;
+    padding-left: 5px;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+
+}
+.editar textarea:focus{
+    outline: 0;
+}
+option{
+    height: 30px;
+    padding: 15px;
+}
+option:hover{
+    background-color: #2f2f2f;
+}
+.btns{
+    display: flex;
+}
+.new{
+    border: 2px solid #2f2f2f;
+    background-color: #e3e3e3;
+    color: #2f2f2f;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.7s;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+.new:hover{
+    background-color: #2f2f2f;
+    color: #e3e3e3;  
+    transition: 0.7s;  
+}
+.save{
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #00a1ff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.7s;
+
+}
+.save:hover {
+    background: rgba(0, 162, 255, 0.856);
+    transition: 0.7s;
+
+}
