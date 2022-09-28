@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon">
+    <meta name="description"
+        content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda.">
+    <meta name="keywords"
+        content="Projetos, FATEC, acessibilidade, Ong, ajuda, instituições, doações, voluntários, desigualdades sociais, políticas públicas, socieloo, cpdev">
+    <meta name="author"
+        content="Aryel Anne, Ademir Martins, Bianca Jesus, Diogo Lima, Fernanda Sena, Leonardo Cajé (Cross-Plataform Dev)">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="robots" content="index,follow">
+    <meta itemprop="image" content="https://user-images.githubusercontent.com/84794798/169667225-9db47581-a814-4c78-9dd2-10e44bc9133b.png">
+
+
+    <!-- Meta dados facebook -->
+    <meta property="og:url" content="diogolcarvalho.github.io/socieloo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Socieloo - Construindo elos sociais" />
+    <meta property="og:site_name" content="Socieloo" />
+    <meta property="og:description"
+        content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda." />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/DiogoLCarvalho/socieloo/main/src/imgs/Socieloo-logo.png" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style_home.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_nav_footer.css">
+    <link rel="stylesheet" href="../css/style_feed.css">
+    <script src="../js/fonte.js"></script>
+    <script src="../js/contraste.js"></script>
+    <script src="../js/carrossel.js"></script>
+
+    <title>Notícias - Socieloo</title>
+</head>
+
+<body>
+    <div id="acessibilidade">
+        <ul id="atalhos">
+            <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+            <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+            <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
+            <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
+            <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>              
+            <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
+            <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+        </ul>
+    </div>
+    <nav>
+        <a href="../../index.html" accesskey="1">
+            <img src="../imgs/Socieloo 1.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">        
+        </a>
+        <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+
+        <!--menu responsivo-->
+        <ul id="menu">
+            <li class="links">
+                <a href="#" accesskey="2">Segmentos▾</a>
+                <ul>
+                    <li class="sublink"><a href="">Cidadania</a></li>
+                    <li class="sublink"><a href="">Cultura e Esportes</a></li>
+                    <li class="sublink"><a href="">Educação</a></li>
+                    <li class="sublink"><a href="">Gênero e Diversidade</a></li>
+                    <li class="sublink"><a href="">Meio Ambiente</a></li>
+                    <li class="sublink"><a href="">Proteção Animal</a></li>
+                    <li class="sublink"><a href="">Saúde</a></li>
+                </ul>
+            </li>
+            <li class="links">
+                <a href="#" accesskey="3">Região▾</a>
+                <ul>
+                    <li class="sublink"><a href="">Zona Leste</a></li>
+                    <li class="sublink"><a href="">Zona Norte</a></li>
+                    <li class="sublink"><a href="">Centro</a></li>
+                    <li class="sublink"><a href="">Zona Oeste</a></li>
+                    <li class="sublink"><a href="">Zona Sul</a></li>
+                </ul>
+            </li>
+            <li class="links acess">
+                <a href="#" accesskey="4">Acessibilidade▾</a>
+                <ul>
+                    <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+                    <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+                    <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste"
+                            accesskey="c">Contraste
+                            ◉</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste"
+                            accesskey="z">Sem
+                            contraste ○</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
+                            accesskey="b">Aumentar fonte
+                            +</a></li>
+                    <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte"
+                            accesskey="s">Diminuir fonte
+                            -</a></li>
+                    <li class="sublink"><a href="acessibilidade.html"
+                            title="Manual de acessibilidade">Acessibilidade</a></li>
+                </ul>
+            </li>
+            <li class="links login"><a href="login.html" accesskey="5">Fazer login</a></li>
+            <li class="links botão"><a href="cadastro.html" accesskey="6">Cadastre sua Ong</a></li>
+        </ul>
+    </nav>
+
+    <section class="principal">
+        <div class="busca">
+            <h1 id="title-index">Um ato de bondade pode ajudar muita gente!</h1>
+            <br>
+        </div>
+    </section>
+
+
+
+    <main id="main-feed">
+
+        <div class="fav__options">
+            <div class="options__search">
+                <input type="search" placeholder="Pesquisar palavra-chave">
+                <span class="search__icon__container">
+                    <img src="../assets/search.svg" alt="icone de pesquisa" class="search__icon">
+                </span>
+            </div>
+        </div>
+
+
+
+        <section>
+            <div class="artigo">         
+                <a href="../../index.html"> <!--link para notícia-->
+                    <div class="img-feed">
+                            <img src="../imgs/fotosOng/fotos01.jpg" alt="Imagem da notícia">
+                    </div>
+                </a>
+                <div class="texto">
+                    <h2>Título Notícia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="pos_botao">
+                        <button class="botao">Editar publicação</button>
+                        <button class="botao">Deletar publicação</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo">
+                <a href="../../index.html"> <!--link para notícia-->
+                    <div class="card-feed">
+                        <div class="img-feed">
+                            <img src="../imgs/fotosOng/fotos01.jpg" alt="Imagem da notícia">
+                        </div>
+                    </div>
+                </a>
+                <div class="texto">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="pos_botao">
+                        <button class="botao">Editar publicação</button>
+                        <button class="botao">Deletar publicação</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="artigo">
+                <a href="../../index.html"> <!--link para notícia-->
+                    <div class="card-feed">
+                        <div class="img-feed">
+                            <img src="../imgs/fotosOng/fotos01.jpg" alt="Imagem da notícia">
+                        </div>
+                    </div>
+                </a>
+                <div class="texto">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="pos_botao">
+                        <button class="botao">Editar publicação</button>
+                        <button class="botao">Deletar publicação</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo">
+                <a href="../../index.html"> <!--link para notícia-->
+                    <div class="card-feed">
+                        <div class="img-feed">
+                            <img src="../imgs/fotosOng/fotos01.jpg" alt="Imagem da notícia">
+                        </div>
+                    </div>
+                </a>
+                <div class="texto">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="pos_botao">
+                        <div class="pos_botao">
+                            <button class="botao">Editar publicação</button>
+                            <button class="botao">Deletar publicação</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo">
+                <a href="../../index.html"> <!--link para notícia-->
+                    <div class="card-feed">
+                        <div class="img-feed">
+                            <img src="../imgs/fotosOng/fotos01.jpg" alt="Imagem da notícia">
+                        </div>
+                    </div>
+                </a>
+                <div class="texto">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="pos_botao">
+                        <button class="botao">Editar publicação</button>
+                        <button class="botao">Deletar publicação</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="post">
+                <img src="../imgs/post.png" alt="Ícone de postagem" id="img_post">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Cross-Platform Dev. Todos os direitos reservados © 2022.</p>
+    </footer>
+
+    <!-- Contraste -->
+    <script type="module">
+        import contraste from "../js/contraste2.js";
+
+        contraste.contraste("../css/style__ong.css", '../css/contraste.css');
+
+    </script>
+</body>
+</html>
