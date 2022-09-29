@@ -221,6 +221,34 @@
     margin-bottom: 15px;
     font-weight: bold;
 }
+
+/* Modificações do checkbox */
+.btn__container > .checkbox-input + .checkbox-label{
+    display: inline;
+    float: none;
+    font-weight: initial;
+    vertical-align: 5px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.btn__container > .checkbox-input{
+    all: unset;
+    border: 0.2em solid #4c4c4c;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    box-shadow:inset 0px 0px 0px 3.5px #fff;
+}
+.btn__container > .checkbox-input:checked {
+    height: 15px;
+    width: 15px;
+    background-color: #00a1ff;
+}
+.btn__container > .checkbox-input:checked +.checkbox-label{
+    color: #00a1ff;
+}
+
+
 /*media query*/
 @media screen and (max-width:890px) { 
     .container_form {
