@@ -133,19 +133,21 @@
                                 <input type="date" name="datanascimento" class="form_input" id="datanascimento"
                                     placeholder="Data de Nascimento" required>
                             </div>
-
+							
+							<div class="form_grupo">
                             <form>
-                                <P><B>Sexo:</B><BR>
-                                    <input type="radio" name="sexo" value="M"> M<BR>
-                                    <input type="radio" name="sexo" value="F"> F
+                                <label for="sexo" class="form_label">Sexo:</label>
+                                    <input type="radio" name="sexo" value="M" id="sexo_masc"> M<BR>
+                                    <input type="radio" name="sexo" value="F" id="sexo_fem"> F
                                 </P>
                             </form>
+							</div>
 
 <!-- ***************************************************************************************************************************************** -->
 
                             <!-- Segue esse padrão! -->
                             <div class="form_grupo">
-                                <span class="legenda">Como conheceu o Socieloo?</span>
+                                <label for="pergunta" class="form_label">Como conheceu o Socieloo?</label>
                                 <div class="btn__container">
                                     <input type="checkbox" id="met-amigos" class="checkbox-input">
                                     <label for="met-amigos" class="checkbox-label">Amigos</label>
@@ -168,22 +170,22 @@
 <!-- ***************************************************************************************************************************************** -->
 
                                 <div class="form_grupo">
-                                    <span class="legenda">Com qual dos nossos pilares você mais se identifica?</span>
+                                    <label for="pergunta1" class="form_label">Com qual dos nossos pilares você mais se identifica?</label>
                                     <div class="check-btn">
-                                        <input type="checkbox" class="form_new_input" id="html5" name="aprender"
+                                        <input type="checkbox" class="form_new_input" id="solidariedade" name="aprender"
                                             value="html5">
                                         <label for="html5" class="form_label check_label"> <span
                                                 class="check_new_btn"></span> Solidariedade e participação ativa</label>
                                     </div>
                                     <div class="check-btn">
-                                        <input type="checkbox" class="form_new_input" id="css3" name="aprender"
+                                        <input type="checkbox" class="form_new_input" id="animal" name="aprender"
                                             value="css3">
                                         <label for="css3" class="form_label check_label"><span
                                                 class="check_new_btn"></span>
                                             Adoção e proteção de animais</label>
                                     </div>
                                     <div class="check-btn">
-                                        <input type="checkbox" class="form_new_input" id="jquery" name="aprender"
+                                        <input type="checkbox" class="form_new_input" id="saude" name="aprender"
                                             value="jquery">
                                         <label for="jquery" class="form_label check_label"><span
                                                 class="check_new_btn"></span> Saúde e bem-estar</label>
@@ -193,50 +195,51 @@
                                     <div class="form_grupo">
                                         <label for="dias" class="form_label">Quantos dias gostaria de dedicar às nossas
                                             atividades?</label>
-                                        <input type="text" name="sobrenome" class="form_input" id="sobrenome"
+                                        <input type="text" name="pergunta" class="form_input" id="pergunta2"
                                             placeholder="" required>
                                     </div>
 
                                     <div class="form_grupo">
-                                        <span class="legenda">Quando prefere participar das nossas ações?</span>
+                                        <label for="dias" class="form_label">Quando prefere participar das nossas ações?</label>
                                         <div class="check-btn">
-                                            <input type="checkbox" class="form_new_input" id="html5" name="aprender"
+                                            <input type="checkbox" class="form_new_input" id="durante_semana" name="aprender"
                                                 value="html5">
                                             <label for="html5" class="form_label check_label"> <span
                                                     class="check_new_btn"></span> Durante a semana</label>
                                         </div>
                                         <div class="check-btn">
-                                            <input type="checkbox" class="form_new_input" id="css3" name="aprender"
+                                            <input type="checkbox" class="form_new_input" id="final_semana" name="aprender"
                                                 value="css3">
                                             <label for="css3" class="form_label check_label"><span
                                                     class="check_new_btn"></span>
                                                 Durante o final de semana</label>
                                         </div>
+									</div>
 
                                         <div class="form_grupo">
-                                            <span class="legenda">Selecione o melhor período para participar das nossas
-                                                atividades</span>
+                                            <label for="dias" class="form_label">Selecione o melhor período para participar das nossas atividades</label>
                                             <div class="check-btn">
-                                                <input type="checkbox" class="form_new_input" id="html5" name="aprender"
+                                                <input type="checkbox" class="form_new_input" id="manha" name="aprender"
                                                     value="html5">
                                                 <label for="html5" class="form_label check_label"> <span
                                                         class="check_new_btn"></span> Manhã</label>
                                             </div>
                                             <div class="check-btn">
-                                                <input type="checkbox" class="form_new_input" id="css3" name="aprender"
+                                                <input type="checkbox" class="form_new_input" id="tarde" name="aprender"
                                                     value="css3">
                                                 <label for="css3" class="form_label check_label"><span
                                                         class="check_new_btn"></span>
                                                     Tarde</label>
                                             </div>
                                             <div class="check-btn">
-                                                <input type="checkbox" class="form_new_input" id="jquery"
+                                                <input type="checkbox" class="form_new_input" id="noite"
                                                     name="aprender" value="jquery">
                                                 <label for="jquery" class="form_label check_label"><span
                                                         class="check_new_btn"></span> Noite</label>
                                             </div>
                                         </div>
-                                            <!--
+                                
+								<!--
                                 <div class="form_grupo">
                                     <span class="legenda form_label">Confirmação de Senha</span>
                                     <div class="inputsenha">
@@ -251,6 +254,7 @@
                                     <textarea name="mensagem" id="message" cols="30" rows="3"class="form_input message_input" required></textarea>
                                 </div>
 								-->
+								
                                             <div class="options__checkbox">
                                                 <input type="checkbox" name="termos" id="termos">
                                                 <label class="check_label" for="termos">Leia a nossa <a
@@ -266,7 +270,7 @@
                                             </div>
 
                                             <div class="submit">
-                                                <input type="hidden" name="acao" value="enviar">
+                                                <input type="hidden" name="acao" value="enviar" id="enviar">
                                                 <button type="submit" name="Submit" class="submit_btn">Enviar</button>
                                             </div>
                         </form>
