@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="src/imgs/favicon.png" type="image/x-icon" />
+
+  <!--===== FONT AWEASOME (Biblioteca de ícones) =====-->
+  <script src="https://kit.fontawesome.com/6deef792e2.js" crossorigin="anonymous"></script>
+
+  <!--===== UNICONS (Biblioteca de ícones) =====-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!--===== GOOGLE FONTS (Fontes do Google) =====-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!--===== CSS =====-->
+  <link rel="stylesheet" href="../css/user.css" />
+
+  <title>Privacidade e segurança - Socieloo</title>
+</head>
+
+<body>
+  <header>
+    <!--===== MENU DE NAVEGAÇÃO =====-->
+    <nav>
+      <!-- Link que leva ao index.html, é o logotipo -->
+      <a href="../../index.html">
+        <img src="../imgs/logotipo-white-black.png" alt="Logo Socieloo nas cores preto e azul" title="Logo" />
+      </a>
+      <!-- Essa div é um container só para separar no display: flex da nav -->
+      <div>
+        <!-- Menu de navegação -->
+        <ul>
+          <!-- Link que leva ao index.html -->
+          <li class="links">
+            <a href="../../index.html" accesskey="2">Home</a>
+          </li>
+        </ul>
+        <!-- Barrinha branca que separa o ícone do link do index.html -->
+        <div class="separador"></div>
+        <!-- Ícone para abrir as opções do usuário -->
+        <i class="fa-solid fa-circle-user user-icon"></i>
+        <!-- Menu de navegação secundário, para as opções do usuário -->
+        <ul class="menu-dropdown">
+          <li>
+            <a href="./perfil_usuario.html">
+              <i class="fa-solid fa-user"></i>
+              Perfil
+            </a>
+          </li>
+          <li>
+            <a href="./alterar_senha.html">
+              <i class="fa-solid fa-user-lock"></i>
+              Alterar Senha
+            </a>
+          </li>
+          <li>
+            <a href="./privac_seg.html">
+              <i class="fa-solid fa-user-shield"></i>
+              Privacidade e <br> Segurança
+            </a>
+          </li>
+          <li>
+            <a href="./FAQ.html">
+              <i class="fa-solid fa-headset"></i>
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a href="../../index.html">
+              <i class="fa-solid fa-arrow-right-from-bracket exit"></i>
+              Sair
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="profile">
+    <div class="container">
+      <h2 class="page-subtitle">Privacidade e Segurança</h2>
+      <div>
+        <h3 class="container-subtitle">
+          Gerenciamento de Conta
+        </h3>
+        <a href="#" class="link-underline">
+          Privacidade da Conta
+        </a>
+
+        <br />
+
+        <button class="button-switch">
+          Compartilhar localização
+          <div class="switch"></div>
+        </button>
+      </div>
+      <div>
+        <h3 class="container-subtitle">
+          Histórico de Atividades
+        </h3>
+        <div class="activity-history">
+          <a href="#">
+            <i class="uil uil-comment-alt"></i>
+            Comentários
+          </a>
+          <a href="#">
+            <i class="uil uil-smile-wink-alt"></i>
+            Avaliações
+          </a>
+          <a href="#">
+            <i class="uil uil-star"></i>
+            Favoritos
+          </a>
+          <a href="#">
+            <i class="uil uil-megaphone"></i>
+            Denúncias
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="../imgs/privacidadeSeguranca.png" alt="Imagem de um cadeado" class="container-img" />
+    </div>
+  </main>
+  <script src="../js/user.js"></script>
+</body>
+
+</html>

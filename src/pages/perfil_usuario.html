@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--===== 'Cabeça da página', configuração, basta copiar e colar nas demais páginas =====-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="src/imgs/favicon.png" type="image/x-icon" />
+
+  <!--===== FONT AWEASOME (Biblioteca de ícones) =====-->
+  <script src="https://kit.fontawesome.com/6deef792e2.js" crossorigin="anonymous"></script>
+
+  <!--===== GOOGLE FONTS (Fontes do Google) =====-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!--===== CSS =====-->
+  <link rel="stylesheet" href="../css/user.css" />
+
+  <!--===== PAGE TITLE =====-->
+  <title>Perfil Usuário - Socieloo</title>
+</head>
+
+<body>
+  <header>
+    <!--===== MENU DE NAVEGAÇÃO =====-->
+    <nav>
+      <!-- Link que leva ao index.html, é o logotipo -->
+      <a href="../../index.html">
+        <img src="../imgs/logotipo-white-black.png" alt="Logo Socieloo nas cores preto e azul" title="Logo" />
+      </a>
+      <!-- Essa div é um container só para separar no display: flex da nav -->
+      <div>
+        <!-- Menu de navegação -->
+        <ul>
+          <!-- Link que leva ao index.html -->
+          <li class="links">
+            <a href="../../index.html" accesskey="2">Home</a>
+          </li>
+        </ul>
+        <!-- Barrinha branca que separa o ícone do link do index.html -->
+        <div class="separador"></div>
+        <!-- Ícone para abrir as opções do usuário -->
+        <i class="fa-solid fa-circle-user user-icon"></i>
+        <!-- Menu de navegação secundário, para as opções do usuário -->
+        <ul class="menu-dropdown">
+          <li>
+            <a href="./perfil_usuario.html">
+              <i class="fa-solid fa-user"></i>
+              Perfil
+            </a>
+          </li>
+          <li>
+            <a href="./alterar_senha.html">
+              <i class="fa-solid fa-user-lock"></i>
+              Alterar Senha
+            </a>
+          </li>
+          <li>
+            <a href="./privac_seg.html">
+              <i class="fa-solid fa-user-shield"></i>
+              Privacidade e <br> Segurança
+            </a>
+          </li>
+          <li>
+            <a href="./FAQ.html">
+              <i class="fa-solid fa-headset"></i>
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a href="../../index.html">
+              <i class="fa-solid fa-arrow-right-from-bracket exit"></i>
+              Sair
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal, basta copiar o todo esse 'main' e alterar o conteúdo nas demais páginas -->
+  <main class="profile">
+    <div class="container">
+      <h2 class="page-subtitle">Perfil</h2>
+      <form action="./perfilUsuario.html" class="form-profile">
+        <div>
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" />
+        </div>
+
+        <div>
+          <label for="nameUser">Nome de Usuário</label>
+          <input type="text" name="nameUser" id="nameUser" />
+        </div>
+
+        <div>
+          <label for="email">E-mail</label>
+          <input type="text" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="bio">Biografia</label>
+          <input type="text" name="bio" id="bio" />
+        </div>
+
+        <button type="submit" class="button">Salvar alterações</button>
+      </form>
+    </div>
+    <div class="container container-imgs">
+      <div class="circle">
+        <img src="../assets/camera.svg" alt="Alterar Foto" class="fileImg" />
+      </div>
+      <div class="select-image">
+        <p>Selecione uma imagem</p>
+
+        <div class="images">
+          <img src="../imgs/voluntario-img1.png" alt="Imagem 1" title="Imagem 1">
+          <img src="../imgs/voluntario-img2.png" alt="Imagem 2" title="Imagem 2">
+          <img src="../imgs/voluntario-img3.png" alt="Imagem 3" title="Imagem 3">
+          <img src="../imgs/voluntario-img4.png" alt="Imagem 4" title="Imagem 4">
+          <img src="../imgs/voluntario-img5.png" alt="Imagem 5" title="Imagem 5">
+        </div>
+
+        <button class="button" id="delete-photo">Excluir foto</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Script para as páginas -->
+  <script src="../js/user.js"></script>
+</body>
+
+</html>
