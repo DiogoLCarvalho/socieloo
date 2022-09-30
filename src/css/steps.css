@@ -34,8 +34,10 @@ header .progress-bar {
 
 header .progress-bar > section {
   position: absolute;
-  left: 0;
-  width: 100%;
+  width: min-content;
+  right: 0;
+  margin-right: 20px;
+
 }
 
 header .progress-bar > section > div {
@@ -104,6 +106,7 @@ main {
 main .main-title {
   font-size: 3rem;
   font-weight: 400;
+  text-align: center;
 }
 
 main .form-container {
@@ -191,4 +194,50 @@ main .form-container .input-group .input {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+@media screen and (max-width:800px){
+  header .progress-bar > section > div .elipse-progress {
+    background: #fff;
+    clip-path: circle();
+    font-size: 1rem;
+    font-weight: 700;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  header .progress-bar > section > div span {
+    width: 3.75rem;
+    margin-left: -1rem;
+    z-index: 10;
+    background: #fff;
+    margin-right: -1rem;
+    height: 0.5rem;
+    align-self: center;
+    z-index: -1;
+  }
+}
+@media screen and (max-width:580px){
+  main .form-container {
+    width: 90vw;
+    padding: 2.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  header .progress-bar > section > div span {
+    width: 2rem;
+    margin-left: -1rem;
+    z-index: 10;
+    background: #fff;
+    margin-right: -1rem;
+    height: 0.5rem;
+    align-self: center;
+    z-index: -1;
+  }
 }
