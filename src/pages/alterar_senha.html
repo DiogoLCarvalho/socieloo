@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="src/imgs/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon" />
 
   <!--===== FONT AWEASOME (Biblioteca de ícones) =====-->
   <script src="https://kit.fontawesome.com/6deef792e2.js" crossorigin="anonymous"></script>
@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <!--===== CSS =====-->
+  <link rel="stylesheet" href="../css/style_nav_footer.css">
   <link rel="stylesheet" href="../css/user.css" />
 
   <title>Alterar Senha - Socieloo</title>
@@ -23,6 +24,18 @@
 
 <body>
   <header>
+    <div id="acessibilidade">
+      <ul id="atalhos">
+          <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+          <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+          <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+          <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
+          <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
+          <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>              
+          <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
+          <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+      </ul>
+  </div>
     <!--===== MENU DE NAVEGAÇÃO =====-->
     <nav>
       <!-- Link que leva ao index.html, é o logotipo -->
