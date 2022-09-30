@@ -11,7 +11,7 @@ img:hover{
     display: block;
     position: relative;
     justify-content: left;
-    margin: 20px 18vw 20px 20vw;
+    margin: 20px 18vw 20px 18vw;
 }
 
 .img-feed{
@@ -33,7 +33,7 @@ img:hover{
 }
 
 .texto{
-    width: 800px;
+    width: 835px;
     margin: 20px;
     text-align: justify;
 }
