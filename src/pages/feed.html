@@ -118,24 +118,17 @@
         <div class="busca">
             <h1 id="title-index">Um ato de bondade pode ajudar muita gente!</h1>
             <br>
-        </div>
-    </section>
-
-
-
-    <main id="main-feed">
-
-        <div class="fav__options">
-            <div class="options__search">
-                <input type="search" placeholder="Pesquisar palavra-chave">
-                <span class="search__icon__container">
-                    <img src="../assets/search.svg" alt="icone de pesquisa" class="search__icon">
-                </span>
+            <div class="fav__options">
+                <div class="options__search">
+                    <input type="search" placeholder="Pesquisar palavra-chave">
+                    <span class="search__icon__container">
+                        <img src="../assets/search.svg" alt="icone de pesquisa" class="search__icon">
+                    </span>
+                </div>
             </div>
         </div>
-
-
-
+    </section>
+    <main id="main-feed">
         <section>
             <div class="artigo">         
                 <a href="../../index.html"> <!--link para notícia-->
@@ -233,6 +226,17 @@
                 <img src="../imgs/post.png" alt="Ícone de postagem" id="img_post">
             </div>
         </section>
+        
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </main>
 
     <footer>

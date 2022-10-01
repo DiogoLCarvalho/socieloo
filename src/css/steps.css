@@ -1,0 +1,243 @@
+/*===== ROOT VARIABLES =====*/
+:root {
+  --hue: 204;
+  --brand: hsl(var(--hue), 97%, 54%);
+  --brand-dark: hsl(var(--hue), 97%, 44%);
+}
+
+/*===== RESET CSS =====*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*===== BASE =====*/
+a {
+  text-decoration: none;
+}
+
+/*===== STYLE CSS =====*/
+
+/* Header */
+header .progress-bar {
+  background: var(--brand);
+  padding: 2rem 1rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  z-index: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+}
+
+header .progress-bar > section {
+  position: absolute;
+  width: min-content;
+  right: 0;
+  margin-right: 20px;
+
+}
+
+header .progress-bar > section > div {
+  display: flex;
+  margin: auto;
+  width: max-content;
+}
+
+header .progress-bar > section > div .elipse-progress {
+  background: #fff;
+  clip-path: circle();
+  font-size: 1.875rem;
+  font-weight: 500;
+  width: 3.25rem;
+  height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header .progress-bar > section > div .elipse-progress.pintado,
+header .progress-bar > section > div span.pintado {
+  background: rgb(214, 214, 214);
+}
+
+header .progress-bar > section > div span {
+  width: 8.75rem;
+  margin-left: -1rem;
+  z-index: 10;
+  background: #fff;
+  margin-right: -1rem;
+  height: 1rem;
+  align-self: center;
+  z-index: -1;
+}
+
+header .nav {
+  background: rgb(250, 250, 250);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem 0;
+}
+
+header .nav .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header .nav .nav-list .nav-item .nav-link {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.75rem;
+  padding: 3.75rem 0;
+}
+
+main .main-title {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+main .form-container {
+  width: 34.25rem;
+  padding: 2.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main .form-container .form-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main .form-container > div {
+  display: flex;
+  gap: 1rem;
+}
+
+main .form-container .input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+main .form-container .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .form-container .buttons .button-blue {
+  padding: 0.5rem 2rem;
+  background: var(--brand);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+main .form-container .buttons .button-blue:hover {
+  background: var(--brand-dark);
+}
+
+main .form-container .buttons .button-white {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: box-shadow 0.3s;
+  background: #fff;
+  font-size: 1rem;
+}
+
+main .form-container .buttons .button-white:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+main .form-container .buttons .button-white .google-icon {
+  width: 1.5rem;
+}
+
+main .form-container .input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+main .form-container .input-group .input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width:800px){
+  header .progress-bar > section > div .elipse-progress {
+    background: #fff;
+    clip-path: circle();
+    font-size: 1rem;
+    font-weight: 700;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  header .progress-bar > section > div span {
+    width: 3.75rem;
+    margin-left: -1rem;
+    z-index: 10;
+    background: #fff;
+    margin-right: -1rem;
+    height: 0.5rem;
+    align-self: center;
+    z-index: -1;
+  }
+}
+@media screen and (max-width:580px){
+  main .form-container {
+    width: 90vw;
+    padding: 2.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  header .progress-bar > section > div span {
+    width: 2rem;
+    margin-left: -1rem;
+    z-index: 10;
+    background: #fff;
+    margin-right: -1rem;
+    height: 0.5rem;
+    align-self: center;
+    z-index: -1;
+  }
+}
