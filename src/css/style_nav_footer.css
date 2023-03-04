@@ -171,8 +171,9 @@ footer{
         right: -5px;
         top:63px;
         padding-bottom: 10px;
-        height: 330px;
+        height: 380px;
         z-index: 9999;
+        border-radius: 5px;
     }
     .acess{
         display: block;

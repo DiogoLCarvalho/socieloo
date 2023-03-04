@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon" />
 
     <!--===== GOOGLE FONTS =====-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,55 +18,120 @@
     <script src="https://kit.fontawesome.com/6deef792e2.js" crossorigin="anonymous"></script>
 
     <!--===== STYLE CSS =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style_header.css">
     <link rel="stylesheet" href="../css/steps.css" />
+    <link rel="stylesheet" href="../src/css/style_home.css">
+    <link rel="stylesheet" href="../css/style_nav_footer.css">
 
-    <!--===== PAGE TITLE =====-->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+      <!-- JS -->
+    <script src="../js/fonte.js"></script>
+
+  <!--===== PAGE TITLE =====-->
     <title>Crie sua Conta | Socieloo</title>
 </head>
 
 <body>
     <header>
-        <div class="progress-bar">
-            <section>
-                <div>
-                    <div class="elipse-progress pintado">1</div>
-                    <span class="pintado"></span>
-                    <div class="elipse-progress pintado">2</div>
-                    <span class="pintado"></span>
-                    <div class="elipse-progress pintado">3</div>
-                    <span class="pintado"></span>
-                    <div class="elipse-progress pintado">4</div>
-                </div>
-            </section>
-
-            <a href="../../index.html">
-                <img src="../imgs/logotipo-white-black.png" alt="Logotipo Socielo" title="Logotipo Socieloo">
+            <div id="acessibilidade">
+                <ul id="atalhos">
+                    <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+                    <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+                    <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+                    <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
+                    <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
+                    <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>
+                    <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
+                    <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>
+                </ul>
+            </div>
+        <nav>
+            <a href="../../index.html" accesskey="1" id="home-acess">
+                <img src="../imgs/Socieloo-logo.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
             </a>
-        </div>
+            <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
+                <!--menu responsivo-->
+                <ul id="menu">
+                    
+                    <li class="links acess">
+                        <a href="#" accesskey="4">Acessibilidade▾</a>
+                        <ul>
+                            <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a>
+                            </li>
+                            <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a>
+                            </li>
+                            <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+                            <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste"
+                                    accesskey="c">Contraste
+                                    ◉</a></li>
+                            <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste"
+                                    accesskey="z">Sem
+                                    contraste ○</a></li>
+                            <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
+                                    accesskey="b">Aumentar fonte
+                                    +</a></li>
+                            <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte"
+                                    accesskey="s">Diminuir fonte
+                                    -</a></li>
+                            <li class="sublink"><a href="src/pages/acessibilidade.html"
+                                    title="Manual de acessibilidade">Acessibilidade</a></li>
+                        </ul>
+                    </li>
+                    <li class="links botão"><a href="login.html" accesskey="5">Fazer login</a></li>
+                </ul>
+        </nav>
     </header>
 
     <main>
-        <h1 class="main-title">Crie sua conta Socieloo</h1>
+        <div class="section__form">
+            <form action="#" method="post" class="form-container">
+                <h1 class="section__title">
+                    Digite o código enviado pelo e-mail
+                </h1>
 
-        <form action="#" method="post" class="form-container">
-            <h2 class="form-title">
-                Digite o código enviado pelo e-mail
-            </h2>
+                <p>Um email de confirmação foi enviado para: <br> <a href="#">******@email.com</a></p>
 
-            <p>Um email de confirmação foi enviado para: <br> <a href="#">******@email.com</a></p>
+                <input class="input-field" type="text" id="code" name="code" placeholder="Código" required />
 
-            <input class="input-field" type="text" id="code" name="code" placeholder="Código" required />
-
-            <div class="buttons">
-                <a href="./terceiro_passo.html" class="button-white">
-                    Voltar
-                </a>
-                <a href="./perfil_usuario.html" class="button-blue">
-                    Finalizar
-                </a>
+                <div class="buttons">
+                    <a href="./terceiro_passo.html" class="button-white">
+                        Voltar
+                    </a>
+                    <a href="./perfil_usuario.html" class="button-blue">
+                        Finalizar
+                    </a>
+                </div>
+            </form>
+        </div>
+    <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
-        </form>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </main>
+    <footer>
+        <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p>
+    </footer>
+
+    <!-- Contraste -->
+    <script type="module">
+        import contraste from "../js/contraste2.js";
+
+        contraste.contraste("../css/style_home.css", '../css/contraste.css');
+
+    </script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
 nav {
   margin: 0%;
   padding: 0 5%;
-  background-color: #00a1ff;
+
   border-radius: 0 0 5px 5px;
   display: flex;
   align-items: center;
@@ -28,14 +28,14 @@ nav > div {
 
 nav i {
   font-size: 2rem;
-  color: #ffffff;
+  color: #000000;
   cursor: pointer;
 }
 
 nav .separador {
   width: 0.1rem;
   height: 2rem;
-  background: #fff;
+  background: #000000;
 }
 
 nav .menu-dropdown {
@@ -96,19 +96,17 @@ nav ul {
   height: 60px;
   padding: 20px 0;
 }
+links
 
-.links a {
-  color: #fff;
-  font-weight: 600;
-}
 
 .links ul {
   position: absolute;
   top: 63px;
   display: none;
-  background-color: #fff;
+  
   margin: 0;
 }
+
 
 main .question-dropdown {
   background: none;
@@ -120,6 +118,7 @@ main .question-dropdown {
   flex-direction: column;
   gap: 1rem;
   cursor: pointer;
+  
 }
 
 main .question-dropdown,
@@ -167,9 +166,9 @@ main .question-dropdown.show-dropdown span i {
 }
 
 .profile .container + .container {
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: center;
+  justify-content:left;
 }
 
 .profile .container .container-subtitle {
@@ -203,7 +202,7 @@ main .question-dropdown.show-dropdown span i {
   left: 2.25rem;
   height: 1px;
   background: #000;
-  transition: width 0.3s;
+  transition: 0.3s;
 }
 
 .profile .container .activity-history a:hover::before {
@@ -276,9 +275,7 @@ main .question-dropdown.show-dropdown span i {
   gap: 0.75rem;
 }
 
-.profile .form-profile div label {
-  font-weight: 600;
-}
+
 
 .profile .form-profile div input {
   padding: 0.5rem;
@@ -303,7 +300,7 @@ main .question-dropdown.show-dropdown span i {
   background: #d9d9d9;
   width: 14rem;
   height: 14rem;
-  margin: 0 auto;
+  margin: 10px  auto;
   position: relative;
 }
 
@@ -336,5 +333,5 @@ main .question-dropdown.show-dropdown span i {
 }
 
 #delete-photo {
-  margin-top: 2.5rem;
+  margin: 50px auto;
 }

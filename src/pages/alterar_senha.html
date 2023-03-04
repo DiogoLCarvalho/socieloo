@@ -2,99 +2,119 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/imgs/favicon.png" type="image/x-icon">
+    <meta name="description"
+        content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda.">
+    <meta name="keywords"
+        content="Projetos, FATEC, acessibilidade, Ong, ajuda, instituições, doações, voluntários, desigualdades sociais, políticas públicas, socieloo, cpdev">
+    <meta name="author"
+        content="Aryel Anne, Ademir Martins, Bianca Jesus, Diogo Lima, Fernanda Sena, Leonardo Cajé (Cross-Plataform Dev)">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="robots" content="index,follow">
+    <meta itemprop="image" content="https://user-images.githubusercontent.com/84794798/169667225-9db47581-a814-4c78-9dd2-10e44bc9133b.png">
 
-  <!--===== FONT AWEASOME (Biblioteca de ícones) =====-->
-  <script src="https://kit.fontawesome.com/6deef792e2.js" crossorigin="anonymous"></script>
 
-  <!--===== GOOGLE FONTS (Fontes do Google) =====-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Meta dados facebook -->
+    <meta property="og:url" content="diogolcarvalho.github.io/socieloo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Socieloo - Construindo elos sociais" />
+    <meta property="og:site_name" content="Socieloo" />
+    <meta property="og:description"
+        content="Socieloo é um projeto interdisciplinar desenvolvido na FATEC Zona Leste. Cujo o objetivo é ser o elo que liga aqueles que querem ajudar com aqueles que precisam dessa ajuda." />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/DiogoLCarvalho/socieloo/main/src/imgs/Socieloo-logo.png" />
 
   <!--===== CSS =====-->
-  <link rel="stylesheet" href="../css/style_nav_footer.css">
-  <link rel="stylesheet" href="../css/user.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/css/style_home.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_nav_footer.css">
+    <link rel="stylesheet" href="../css/user.css" />
 
-  <title>Alterar Senha - Socieloo</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+      <!-- JS -->
+    <script src="../js/fonte.js"></script>
+
+  <!--===== PAGE TITLE =====-->
+  <title>Perfil Usuário - Socieloo</title>
 </head>
 
 <body>
-  <header>
-    <div id="acessibilidade">
-      <ul id="atalhos">
-          <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
-          <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
-          <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
-          <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
-          <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
-          <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>              
-          <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
-          <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
-      </ul>
-  </div>
-    <!--===== MENU DE NAVEGAÇÃO =====-->
-    <nav>
-      <!-- Link que leva ao index.html, é o logotipo -->
-      <a href="../../index.html">
-        <img src="../imgs/logotipo-white-black.png" alt="Logo Socieloo nas cores preto e azul" title="Logo" />
-      </a>
-      <!-- Essa div é um container só para separar no display: flex da nav -->
-      <div>
-        <!-- Menu de navegação -->
-        <ul>
-          <!-- Link que leva ao index.html -->
-          <li class="links">
-            <a href="../../index.html" accesskey="2">Home</a>
-          </li>
-        </ul>
-        <!-- Barrinha branca que separa o ícone do link do index.html -->
-        <div class="separador"></div>
-        <!-- Ícone para abrir as opções do usuário -->
-        <i class="fa-solid fa-circle-user user-icon"></i>
-        <!-- Menu de navegação secundário, para as opções do usuário -->
-        <ul class="menu-dropdown">
-          <li>
-            <a href="./perfil_usuario.html">
-              <i class="fa-solid fa-user"></i>
-              Perfil
-            </a>
-          </li>
-          <li>
-            <a href="./alterar_senha.html">
-              <i class="fa-solid fa-user-lock"></i>
-              Alterar Senha
-            </a>
-          </li>
-          <li>
-            <a href="./privac_seg.html">
-              <i class="fa-solid fa-user-shield"></i>
-              Privacidade e <br> Segurança
-            </a>
-          </li>
-          <li>
-            <a href="./FAQ.html">
-              <i class="fa-solid fa-headset"></i>
-              FAQ
-            </a>
-          </li>
-          <li>
-            <a href="../../index.html">
-              <i class="fa-solid fa-arrow-right-from-bracket exit"></i>
-              Sair
-            </a>
-          </li>
-        </ul>
+ <header>
+          <div id="acessibilidade">
+          <ul id="atalhos">
+              <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a></li>
+              <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a></li>
+              <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+              <li class="fonte"><a href="javascript:void(0)" id="ddiminuir" title="Diminuir fonte">A-</a></li>
+              <li class="fonte"><a href="javascript:void(0)" id="aaumentar" title="Aumentar fonte">A+</a></li>
+              <li class="contraste s"><a href="javascript:void(0);" id="ssemcontraste" title="Sem contraste">○</a></li>
+              <li class="contraste c"><a href="javascript:void(0);" id="ccontraste" title="Contraste">●</a></li>
+              <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>
+          </ul>
       </div>
-    </nav>
-  </header>
+      <nav>
+          <a href="../../index.html" accesskey="1" id="home-acess">
+              <img src="../imgs/Socieloo-logo.png" alt="Logo Socieloo nas cores preto e azul" title="Logo">
+          </a>
+          <label for="bt_menu"><img src="../imgs/menu.png" alt="menu"></label>
+          <input type="checkbox" id="bt_menu">
+          <!--menu responsivo-->
+          <ul id="menu">
+              
+              <li class="links acess">
+                  <a href="#" accesskey="1">Acessibilidade▾</a>
+                  <ul>
+                      <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]↓</a>
+                      </li>
+                      <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]↓</a>
+                      </li>
+                      <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]↓</a></li>
+                      <li class="sublink"><a href="javascript:void(0)" title="Ativar contraste" id="contraste"
+                              accesskey="c">Contraste
+                              ◉</a></li>
+                      <li class="sublink"><a href="javascript:void(0)" title="Desativar contraste" id="sem-contraste"
+                              accesskey="z">Sem
+                              contraste ○</a></li>
+                      <li class="sublink"><a href="javascript:void(0)" id="aumentar" title="Aumentar fonte"
+                              accesskey="b">Aumentar fonte
+                              +</a></li>
+                      <li class="sublink"><a href="javascript:void(0)" id="diminuir" title="Diminuir fonte"
+                              accesskey="s">Diminuir fonte
+                              -</a></li>
+                      <li class="sublink"><a href="src/pages/acessibilidade.html"
+                      title="Manual de acessibilidade">Acessibilidade</a></li>
+                  </ul>
+              </li>
+              <li class="links">
+                  <a href="\index.html" accesskey="2">Home</a></li>
+              <li class="links">
+                  <a href="\src\pages\alterar_senha.html" accesskey="2">Alterar senha</a>
+              </li>
+              <li class="links">
+                  <a href="\src\pages\privac_seg.html" accesskey="2">Privacidade e segurança</a>
+              </li>
+              <li class="links">
+                  <a href="\src\pages\FAQ.html" accesskey="2">FAQ</a>
+              </li>
+              <li class="links botão"><a href="/index.html" accesskey="6">Sair</a></li>
+              
+          </ul>
+      </nav>
+    </header>
 
+  <div class="section__form">
   <main class="profile">
     <div class="container">
-      <h2 class="page-subtitle">Alterar Senha</h2>
+      <h1 class="page-subtitle">Alterar Senha</h1>
       <form action="./perfilUsuario.html" class="form-profile">
         <div>
           <label for="name">Senha atual</label>
@@ -120,6 +140,27 @@
     </div>
   </main>
   <script src="../js/user.js"></script>
+</div>
+    <footer>
+        <p>Desenvolvido por Cross-Plataform Dev. Todos os direitos reservados © 2022.</p>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script type="module">
+        import contraste from "../js/contraste2.js";
+
+        contraste.contraste("../css/style__ong.css", '../css/contraste.css');
+
+    </script>
 </body>
 
 </html>
